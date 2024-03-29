@@ -1,0 +1,48 @@
+{
+  "name": "whatsapp-bot",
+  "version": "1.3.0",
+  "description": "WhatsApp Bot Replyer, Powered by Node.js+whatsapp-web.js",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "build": "tsc && npx tsc-alias",
+    "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/index.ts\"",
+    "serve": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gensart-ai/whatsapp-bot"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "whatsapp-bot",
+    "nodejs",
+    "whatsapp-web",
+    "web"
+  ],
+  "author": "gensart",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^20.11.16",
+    "@types/qrcode-terminal": "^0.12.2",
+    "@types/tough-cookie": "^4.0.5",
+    "nodemon": "^3.0.3",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "axios-cookiejar-support": "^5.0.0",
+    "bing-translate-api": "^4.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.5",
+    "mime-types": "^2.1.35",
+    "qrcode-terminal": "^0.12.0",
+    "tough-cookie": "^4.1.3",
+    "whatsapp-web.js": "^1.23.0"
+  }
+}
