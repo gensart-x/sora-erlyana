@@ -1,6 +1,8 @@
-- [Welcome](./README.md)
-- [Requirements](./REQUIREMENTS.md)
-- [Installation](./INSTALLATION.md)
-- [Pre Configurations](./CONFIGURATIONS.md)
-- [Quickstart](./QUICKSTART.md)
-- [Usage](./USAGE.md)
+- Getting Started
+
+    - [Welcome](welcome)
+    - [Requirements](requirements)
+    - [Installation](installation)
+    - [Pre Configurations](configurations)
+    - [Quickstart](quickstart)
+    - [Known Bugs](known-bugs)
