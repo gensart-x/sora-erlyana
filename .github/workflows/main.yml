@@ -33,10 +33,10 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ~/production_space/whatsapp-bot
+            cd ~/production_space/sora-erlyana
             git reset --hard
             git clean -df
             git pull origin main
             npm i
             npm run build
-            systemctl --user restart whatsapp-bot
+            systemctl --user restart sora-erlyana
