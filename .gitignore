@@ -7,6 +7,10 @@ lerna-debug.log*
 .pnpm-debug.log*
 logs/error-log.txt
 
+# * Project no-more-need-versioning files
+assets/feature-request.json
+logs/error-log.txt
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

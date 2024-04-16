@@ -25,6 +25,7 @@ const commandGuide: Executor = async (client, message) => {
         '.s (kirim bersama dengan gambarnya)',
         '.st [teks] (kirim bersama dengan gambarnya)\n',
         '🖼 *TextPro (Buat teks jadi gambar, dengan gaya)*',
+        '.contohtextpro - Contoh dari masing² TextPro (*COMING SOON*)',
         '.neon',
         '.lunar',
         '.thunder',
@@ -41,16 +42,15 @@ const commandGuide: Executor = async (client, message) => {
         '.neon-cube',
         '.blackpink-logo\n',
         '👨‍🔬🧪 Fitur yang akan datang',
-        '[⚙] Tiktok Downloader',
-        '[⚙] Instagram Downloader',
-        '[⚙] YouTube Downloader',
+        '[❌ Hardware Support] Tiktok Downloader',
+        '[❌ Hardware Support] Instagram Downloader',
+        '[❌ Hardware Support] YouTube Downloader',
         '[✅] Bot Information (versi, tech used, etc.)',
         '[✅] Feedback Request Fitur',
         '[⚙] Donasi Semi-Kemanusiaan (Apaan nih ? Coming soon ya😄)\n',
         `😎 Kamu juga bisa request fitur yang belum ada lho, atau punya saran tertentu, bisa langsung kirim ke ${config.botShortName} dengan format :`,
         '`.request [request fitur/saran perbaikan]`',
-        `Request akan langsung ${config.botShortName} informasikan ke creator. 🫡\n`,
-        `Detail of ${config.botShortName} : https://gensart.notion.site/SoraErlyana-WhatsApp-Bot-7248504bbe18476e912912a9426b9bad`
+        `Request akan ${config.botShortName} informasikan ke creator. 🫡\n`,
     ];
 
     // Merge the array of strings to be as a message

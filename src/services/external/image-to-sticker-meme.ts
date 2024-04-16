@@ -116,6 +116,10 @@ const imageToStickerText: Executor = async (client, message) => {
         // If this execution does not have any media, inform the user, and cancel it.
         if (media == undefined) {
             wweb.replyMessage(message, `${config.botShortName} perlu gambar untuk dijadikan stikernya, ${contact.pushname ?? ''}`)
+            wweb.replyMessage(
+                message,
+                `Jika yang ${contact.pushname ?? ''} adalah video/GIF dan tidak bisa, ${config.botShortName} saat ini belum mendukung untuk video/GIF jadi stiker, maaf ya 😢. Creator ${config.botShortName} lagi cari cara biar bisa solve !`
+            );
             return 0;
         }
 

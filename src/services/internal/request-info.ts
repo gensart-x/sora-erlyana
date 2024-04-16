@@ -13,7 +13,7 @@ const requestInfo: Executor = async (client, message) => {
     const contact = await message.getContact();
     request = request + ' | oleh ' + contact?.pushname ?? 'unknown'
     await recordRequest(request)
-    wweb.replyMessage(message, 'Terimakasih ! 😁');
+    wweb.replyMessage(message, 'Terimakasih atas saran yang diberikan! 😁');
 }
 
 const recordRequest = async (text: string) => {

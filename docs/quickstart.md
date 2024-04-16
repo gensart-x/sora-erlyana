@@ -1,6 +1,6 @@
 # Quickstart  
 
-This project made in Typescript. If you have done the [Installation](./INSTALLATION.md) and have checked the [Configurations](./CONFIGURATIONS.md), you can open the terminal at root directory of the project and do the command below to build the `src` to JavaScript to `dist`:
+This project made in Typescript. If you have done the [Installation](installation) and have checked the [Configurations](configurations), you can open the terminal at root directory of the project and do the command below to build the `src` to JavaScript to `dist`:
 ```terminal
 npm run build
 ```

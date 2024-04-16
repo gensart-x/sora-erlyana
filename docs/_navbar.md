@@ -1,1 +1,1 @@
-* [SoraErlyana Repo GitHub](https://github.com/gensart-ai/whatsapp-bot)
+* [SoraErlyana Repo GitHub](https://github.com/gensart-x/sora-erlyana)

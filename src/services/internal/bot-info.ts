@@ -10,11 +10,12 @@ const botInfo: Executor = async (client, message) => {
         `Owner: ${config.ownerName}\n`,
 
         'Tahun Rilis:' + 2024,
-        'Versi Saat Ini:' + '1.3.0',
+        'Versi Saat Ini:' + '1.0.0',
         'Teknologi Digunakan :',
         '- NodeJS',
         '- TypeScript',
-        '- whatsapp-web.js (wwebjs.dev)',
+        '- whatsapp-web.js (wwebjs.dev)\n',
+        'Gunakan `.request [isi feedbackmu]` untuk berikan feedback kepada ' + config.botShortName + ' 😊'
     ];
     wweb.sendMessage(client, message.from, informationArray.join('\n'));
 }

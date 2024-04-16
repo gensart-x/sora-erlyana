@@ -22,6 +22,10 @@ const imageToSticker: Executor = async (client, message) => {
             message,
             `${config.botShortName} perlu gambar untuk dijadikan stikernya, ${contact.pushname ?? ''}`
         );
+        wweb.replyMessage(
+            message,
+            `Jika yang ${contact.pushname ?? ''} adalah video/GIF dan tidak bisa, ${config.botShortName} saat ini belum mendukung untuk video/GIF jadi stiker, maaf ya 😢. Creator ${config.botShortName} lagi cari cara biar bisa solve !`
+        );
         return 0;
     }
 

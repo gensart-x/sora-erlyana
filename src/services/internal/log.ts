@@ -28,6 +28,9 @@ const log: Executor = async (client, message) => {
 
         const logs: string = logger.fetchLog(logFile);
 
+        // * (for-current-dev) Showing the chat id for dev purpose
+        wweb.sendMessage(client, message.from, 'Chat ID used : ' + message.from);
+
         if (logs != '') {
             wweb.replyMessage(message, logs)
         } else {

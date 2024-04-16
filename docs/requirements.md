@@ -17,11 +17,11 @@ You can use this [link](https://nodejs.org/en) to go to Node.js homepage for ins
 
 Oh also, make sure you have installed **NPM** too. Usually **Node.js** includes **NPM** so you don't need to install it again.
 
-And i often experience errors when testing multimedia with this app on Windows 10 environment, but not on Debian 11. My assumption going to **ffmpeg** problem, maybe you can install that if you experience an error when dealing with multimedia thing.
+And i often experience errors when testing multimedia with this app on Windows 10 environment, but not on Debian 11. My assumption going down to **ffmpeg** problem, maybe you can install that if you have experienced an error when dealing with multimedia thing.
 
-You also need ImgBB for multimedia thing in current built-in features. Soon maybe I'll explain more why I use this, and maybe doing removal on need of ImgBB if possible. See [here](https://api.imgbb.com/) for more information.
+You also need ImgBB for multimedia thing in current built-in features. Soon maybe I'll explain more why I use this, and maybe doing removal on need of ImgBB if possible. See [here](https://api.imgbb.com/) for more their API information.
 
-Ghola API key is needed for built-in feature : AI with `.tanya` command. It hits Ghola's AI API. See [here](https://www.ghola.ai/developer) for more information.
+Ghola API key is needed for built-in feature : AI with `.tanya` command. It hits Ghola's AI API. See [here](https://www.ghola.ai/developer) for more API information.
 
 ## **🔴 IMPORTANT NOTICE 🔴** <!-- {docsify-ignore} -->
 
