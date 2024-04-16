@@ -7,9 +7,11 @@
 ![forthebadge](https://img.shields.io/github/last-commit/gensart-x/sora-erlyana/main?display_timestamp=author&style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fgensart-x%2Fsora-erlyana)
 
 WhatsApp bot powered by Node.js, with several daily commands that might be useful for you
-
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.png)](https://web.pln.co.id/tentang-kami/profil-perusahaan)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+<p>
+    <img src="https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana">
+    <img src="https://m3-markdown-badges.vercel.app/issues/6/1/gensart-x/sora-erlyana">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg">
+</p>
 
 # Preview (v1.0)
 
@@ -21,8 +23,13 @@ The preview might take a while to load sometimes, depends on your connection.
 
 > This project still on maintaining 🚧, so it might have a massive changes, so stay tuned !
 
-![forthebadge](https://img.shields.io/badge/Node.js-100000?style=for-the-badge&logo=node.js&logoColor=white&labelColor=60AA50&color=447C42)
-![forthebadge](https://img.shields.io/badge/Typescript-100000?style=for-the-badge&logo=typescript&logoColor=white&labelColor=5094DD&color=5094DD)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript3.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/JSON/json3.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/NodeJS/nodejs1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/TypeScript/typescript1.svg)
 
 # Features
 
@@ -40,7 +47,7 @@ This application uses `whatsapp-web.js` as a primary library. Keep in mind if yo
 
 ```bash
 WhatsApp terms & conditions do not allow any unofficial bots or automation on its services.
-And this app is considered unofficial.
+And this app should be used properly. I do not encourage any bad misuse that may hurt any person/group by the usage of this app. Please use it wisely, I create this for good reason.
 ```
 
 So, I am not responsible for any banning happen to your WhatsApp account by using this app. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number and still safe until now.
@@ -75,12 +82,14 @@ npm run build
 
 -   Try to send `.help` to the WhatsApp you integrates in. It should return available commands as a response.
 
+<br>
+Seek the documentation at : [here](https://gensart-x.github.io/sora-erlyana)  
+Current Stable Version : `1.0.0`
+
 ---
 
 <p align="center">
-    Look more at the documentation ▶ : [here](https://gensart-x.github.io/sora-erlyana)
+    SoraErlyana,
     <br>
-    Current Stable Version : `1.0.0`
-    <br>
-    With respect and made with 💚 for go open-source !
+    with respect and made with 💚 for everyone !
 </p>
