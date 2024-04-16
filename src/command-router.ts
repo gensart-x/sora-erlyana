@@ -8,6 +8,10 @@ const routeCommand = async (client: Client, message: Message) => {
     // Read the message
     await client.sendSeen(message.from);
 
+    // From 1.0, adding some random delay
+    // todo : needs some proper implementation, and testable
+    await new Promise(resolve => setTimeout(resolve, [1000, 2000][Math.round(Math.random())]));
+
     const type: string = message.type;
     const command: string = message.body;
 
