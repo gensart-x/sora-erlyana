@@ -5,7 +5,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
-logs/error-log.txt
 
 # * Project no-more-need-versioning files
 assets/feature-request.json
