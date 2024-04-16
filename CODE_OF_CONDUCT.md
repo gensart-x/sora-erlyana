@@ -2,23 +2,23 @@
 
 ## Purpose 🎯
 
-The WhatsApp Bot Project is committed to providing a welcoming and inclusive environment for contributors, users, and all participants. This Code of Conduct outlines our expectations and the standards we hold ourselves to ensure a respectful and collaborative community.
+The sora-erlyana project is committed to providing a welcoming and inclusive environment for contributors, users, and all participants. This Code of Conduct outlines our expectations and the standards we hold ourselves to ensure a respectful and collaborative community.
 
 ## Our Standards 📐
 
 Examples of behavior that contributes to a positive environment include ❤ :
 
-- **Respect**: Be kind and considerate, respecting differing opinions and experiences.
-- **Inclusivity**: Strive to include everyone and ensure that everyone feels heard and valued.
-- **Collaboration**: Work together with others, fostering a collaborative and supportive community.
-- **Open-mindedness**: Be open to constructive criticism and new ideas, recognizing the value they bring.
+-   **Respect**: Be kind and considerate, respecting differing opinions and experiences.
+-   **Inclusivity**: Strive to include everyone and ensure that everyone feels heard and valued.
+-   **Collaboration**: Work together with others, fostering a collaborative and supportive community.
+-   **Open-mindedness**: Be open to constructive criticism and new ideas, recognizing the value they bring.
 
 Examples of unacceptable behavior include 💢 :
 
-- **Harassment**: Any form of harassment, offensive comments, or unwelcome behavior.
-- **Discrimination**: Discrimination based on race, gender, sexual orientation, disability, or any other factor.
-- **Trolling**: Deliberately inflammatory comments or disruptions.
-- **Personal Attacks**: Attacking or insulting others personally.
+-   **Harassment**: Any form of harassment, offensive comments, or unwelcome behavior.
+-   **Discrimination**: Discrimination based on race, gender, sexual orientation, disability, or any other factor.
+-   **Trolling**: Deliberately inflammatory comments or disruptions.
+-   **Personal Attacks**: Attacking or insulting others personally.
 
 ## Responsibilities ⛑ :
 
@@ -35,4 +35,3 @@ Instances of abusive, harassing, or otherwise unacceptable behavior may result i
 ## Attribution 📛
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, available at [https://www.contributor-covenant.org/version/2/0/code_of_conduct.html](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html).
-

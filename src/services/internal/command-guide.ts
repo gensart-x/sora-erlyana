@@ -25,7 +25,7 @@ const commandGuide: Executor = async (client, message) => {
         '.s (kirim bersama dengan gambarnya)',
         '.st [teks] (kirim bersama dengan gambarnya)\n',
         '🖼 *TextPro (Buat teks jadi gambar, dengan gaya)*',
-        '.contohtextpro - Contoh dari masing² TextPro (*COMING SOON*)',
+        '.contohtextpro - Coming soon',
         '.neon',
         '.lunar',
         '.thunder',
