@@ -19,6 +19,10 @@ The preview might take a while to load sometimes, depends on your connection.
 
 ![preview of the bot](https://i.ibb.co/BKDnYQD/whatsapp-bot-preview.gif)
 
+## Want to try it out ?
+Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
+> ⚠ Do note too that if you want to use Sora, USE, IT, WISELY. Or I will remove the try-out link above and block your number from Sora.
+
 # Technology Used <!-- {docsify-ignore} -->
 
 > This project is still on development 🚧, so it might have a massive changes, so stay tuned !
@@ -87,7 +91,9 @@ Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">h
 
 Current Stable Version : `1.0.0`
 
-![teer.id/gensart](https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg)
+<a href="teer.id/gensart">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg">
+</a>
 
 ---
 
