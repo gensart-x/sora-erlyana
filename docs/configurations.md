@@ -1,11 +1,12 @@
 # Configurations  
 
-> 🚧 Do note that this project is still on development, it **might** have impact changes, including this configurations method.  
+For the configuration, I put all configuration/environment values inside `env` file, which you have been renamed to `.env` if you follow the [installation](installation) page.  
 
-!> Because the project are still on development, and I need to record the changes to version control, and the environment data will be recorded too. Though, you may provide some feedback / suggestion for this, I may be appreciate that 💖.
+The flow is like this :  
+**.env** > **env.ts** > Ready to use!  
 
-#### ! UPDATE !
-I have installed `dotenv` library to store several sensitive variables like tokens in `.env` file. Currently, I do record the `env` variables to version control. Maybe soon, I'll find a way to create an interface for that, so you will know what variables are used for the app.
+The `.env` provides the value of the configuration, and `env.ts` packages the values as an object, so you know each variable information.  
 
-As of current version, I put some global configurations too on a Typescript file in : `./src/env.ts`.  
-You can do several things like changing Bot name, short name, or codename (used for watermarking sticker author, etc.)
+Adjust the values like the bot name, IMGBB Key, Ghola API, etc. with your own information.  
+
+After you done the instruction above, next to the [quickstart](quickstart) page.

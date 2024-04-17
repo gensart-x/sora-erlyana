@@ -11,4 +11,4 @@ After that, go to the repo root directory on your system and do the command belo
 npm i
 ```  
 
-And you're done ! Next is for [pre-configuration](configurations).
+Next is renaming the `env` file to `.env`, the contents inside `env` will be explained in the [pre-configuration](configurations).
