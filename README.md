@@ -91,7 +91,7 @@ Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">h
 
 Current Stable Version : `1.0.0`
 
-<a href="teer.id/gensart">
+<a href="https://teer.id/gensart">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg">
 </a>
 
