@@ -59,7 +59,6 @@ const geminiText = async (text: string): Promise<GeminiResponse> => {
     };
 
     // Add API key to the URL
-    // todo : Google API key
     geminiUrl = geminiUrl + '?key=' + 'here';
 
     // Hit the API
@@ -115,8 +114,4 @@ const geminiTextOnly: Executor = async (client, message) => {
     } catch (error) {
         wweb.replyMessage(message, 'Maaf, terjadi kesalahan saat menjawab pertanyaan anda. Silahkan coba lagi');
     }
-}
-
-export {
-    geminiTextOnly
 }

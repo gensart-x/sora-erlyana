@@ -1,4 +1,14 @@
 IMGBB_KEY = 'api-key-of-imgbb'
+
 GHOLA_TOKEN = 'put-ghola-token-here'
 GHOLA_EMAIL = 'put-associated-ghola-email-here'
 GHOLA_AI_PROFILE_ID = 'put-ghola-ai-profile-id-here'
+
+BOT_NAME = 'Sora Erlyana'
+BOT_SHORT_NAME = 'Sora'
+BOT_CODE_NAME = 'SoraErlyana'
+
+OWNER_NAME = 'Genesaret Johnes'
+
+BANK_ACCOUNT = 'your-bank-account-if-needed'
+TRAKTEER_LINK = 'teer.id/gensart'

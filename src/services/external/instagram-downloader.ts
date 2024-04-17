@@ -85,7 +85,3 @@ const instagramDownloader: Executor = async (client, message) => {
         wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kegagalan saat memprosesnya. Silahkan coba kembali nanti ya! 🙏`);
     }
 }
-
-export {
-    instagramDownloader
-}

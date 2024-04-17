@@ -1,5 +1,4 @@
 import { Contact, MessageMedia } from 'whatsapp-web.js'
-import 'dotenv/config'
 import axios, { AxiosError } from 'axios'
 import querystring from 'querystring'
 import config from '@/env'
@@ -15,7 +14,7 @@ type Meme = {
 const uploadImageToUrl = async (base64Image: string) => {
     const queries = querystring.encode({
         // API Key
-        key: process.env.IMGBB_KEY,
+        key: config.imgBBKey,
 
         // Image auto-deletion after x seconds uploaded
         expiration: 60,

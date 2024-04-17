@@ -4,7 +4,7 @@ import config from '@/env';
 
 const botInfo: Executor = async (client, message) => {
     const informationArray = [
-        `⚡Informasi tentang ${config.botName}⚡`,
+        `⚡ Informasi tentang ${config.botName} ⚡`,
         `Nama: ${config.botName}`,
         `Nama Panggilan: ${config.botShortName}`,
         `Owner: ${config.ownerName}\n`,
@@ -12,9 +12,10 @@ const botInfo: Executor = async (client, message) => {
         'Tahun Rilis:' + 2024,
         'Versi Saat Ini:' + '1.0.0',
         'Teknologi Digunakan :',
-        '- NodeJS',
+        '- NodeJS v20',
         '- TypeScript',
-        '- whatsapp-web.js (wwebjs.dev)\n',
+        '- whatsapp-web.js (wwebjs.dev)',
+        '- Debian Bookworm 12\n',
         'Gunakan `.request [isi feedbackmu]` untuk berikan feedback kepada ' + config.botShortName + ' 😊'
     ];
     wweb.sendMessage(client, message.from, informationArray.join('\n'));

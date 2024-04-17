@@ -1,4 +1,3 @@
-import 'dotenv/config'
 import axios from 'axios'
 import { Executor } from '@/command-hive'
 import * as wweb from '@utils/wweb'
@@ -10,9 +9,9 @@ const GHOLA_CHAT_ENDPOINT = 'https://www.ghola.ai/api/v1/chat';
 
 const retrieveGholaToken = async () => {
     const response = await axios.post(GHOLA_TOKEN_ENDPOINT, {
-        token: process.env.GHOLA_TOKEN,
-        email: process.env.GHOLA_EMAIL,
-        profileId: process.env.GHOLA_AI_PROFILE_ID
+        token: config.gholaToken,
+        email: config.gholaEmail,
+        profileId: config.gholaProfileId
     }, {
         headers: {
             'Content-Type': 'application/json'

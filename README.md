@@ -21,15 +21,15 @@ The preview might take a while to load sometimes, depends on your connection.
 
 # Technology Used <!-- {docsify-ignore} -->
 
-> This project still on maintaining 🚧, so it might have a massive changes, so stay tuned !
+> This project is still on development 🚧, so it might have a massive changes, so stay tuned !
 
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript3.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/JSON/json3.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/NodeJS/nodejs1.svg)
-![](https://ziadoua.github.io/m3-Markdown-Badges/badges/TypeScript/typescript1.svg)
+![Axios HTTP Client](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
+![Debian Bookworm 12](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
+![Git Version Control](https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg)
+![Javascript](https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript3.svg)
+![JSON Interexchange format](https://ziadoua.github.io/m3-Markdown-Badges/badges/JSON/json3.svg)
+![Node JS runtime](https://ziadoua.github.io/m3-Markdown-Badges/badges/NodeJS/nodejs1.svg)
+![Typescript](https://ziadoua.github.io/m3-Markdown-Badges/badges/TypeScript/typescript1.svg)
 
 # Features
 
@@ -39,15 +39,15 @@ The preview might take a while to load sometimes, depends on your connection.
 -   Random Couple Anime Profile Pictures 👭
 -   Translate English to Indonesia, and otherwise 🌐
 -   Random Wise Quotes 🦜
--   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your username in here as a contribution !✨😎
+-   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
 
 # Overview
 
 This application uses `whatsapp-web.js` as a primary library. Keep in mind if you want to use this app, I assume you did already know that :
 
 ```bash
-WhatsApp terms & conditions do not allow any unofficial bots or automation on its services.
-And this app should be used properly. I do not encourage any bad misuse that may hurt any person/group by the usage of this app. Please use it wisely, I create this for good reason.
+🔴 WhatsApp terms & conditions do not allow any unofficial bots or automation on its services.
+And this app should be used properly. I do not encourage any misuse that may hurt any person/group by the usage of this app. Please use it wisely, I create this for good reason.
 ```
 
 So, I am not responsible for any banning happen to your WhatsApp account by using this app. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number and still safe until now.
@@ -56,7 +56,7 @@ So, I am not responsible for any banning happen to your WhatsApp account by usin
 
 The installation needs several steps, you might want to see the documentation for more information.
 
--   For quick installation, first thing you can clone the app, no matter what method you use, below is the simple example one :
+-   For quick installation, first thing you can clone the app, no matter what method you use, below is the simple example one using Git command:
 
 ```bash
 git clone https://github.com/gensart-x/sora-erlyana.git
@@ -83,8 +83,11 @@ npm run build
 -   Try to send `.help` to the WhatsApp you integrates in. It should return available commands as a response.
 
 <br>
-Seek the documentation at : [here](https://gensart-x.github.io/sora-erlyana)  
+Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">here</a>  
+
 Current Stable Version : `1.0.0`
+
+![teer.id/gensart](https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg)
 
 ---
 

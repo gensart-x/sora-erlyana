@@ -10,7 +10,7 @@ import { indoSlangQuote } from '@services/internal/quote-indo-slang'
 import { getPpCouple } from '@services/internal/pp-couple'
 import { ghola } from '@services/external/ghola'
 import { requestInfo } from '@services/internal/request-info'
-import { instagramDownloader } from '@services/external/instagram-downloader'
+import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
 
 type Commands = {
@@ -33,10 +33,6 @@ const commands: Commands = {
     // * Quotes
     '.quotes': getForismaticQuotes,
     '.indoquotes': indoSlangQuote,
-
-
-    // * Converter
-    '.ig': instagramDownloader,
 
     // * Random Image
     '.ppcouple': getPpCouple,
@@ -68,6 +64,9 @@ const commands: Commands = {
     '.neon-valentine': textProSingleTextRouter,
     '.neon-cube': textProSingleTextRouter,
     '.blackpink-logo': textProSingleTextRouter,
+
+    // * Donation
+    '.donasi': donation
 }
 
 export {
