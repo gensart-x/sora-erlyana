@@ -2,18 +2,16 @@
     <img width="250" height="250" src="https://i.ibb.co/7y1v1q4/hour.png">
 </p>
 
-# SoraErlyana
-
 ![forthebadge](https://img.shields.io/github/last-commit/gensart-x/sora-erlyana/main?display_timestamp=author&style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fgensart-x%2Fsora-erlyana)
 
 WhatsApp bot powered by Node.js, with several daily commands that might be useful for you
 <p>
     <img src="https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana">
     <img src="https://m3-markdown-badges.vercel.app/issues/6/1/gensart-x/sora-erlyana">
-    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg" title="You can use/fork this for your own development !">
 </p>
 
-# Preview (v1.0)
+# Preview (v1.0.0)
 
 The preview might take a while to load sometimes, depends on your connection.
 
@@ -71,6 +69,8 @@ git clone https://github.com/gensart-x/sora-erlyana.git
 ```bash
 npm i
 ```
+
+-   Next is renaming the `env` file to `.env`, and adjust the contents inside the `.env` with your own, see [configurations](https://gensart-x.github.io/sora-erlyana/#/configurations) or `env.ts` file for more information.
 
 -   And, since the app was developed in Typescript, you can build it by using command provided on `package.json` :
 
