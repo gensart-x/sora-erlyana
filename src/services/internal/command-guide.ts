@@ -48,12 +48,10 @@ const commandGuide: Executor = async (client, message) => {
         '[❌ Hardware Support] Tiktok Downloader',
         '[❌ Hardware Support] Instagram Downloader',
         '[❌ Hardware Support] YouTube Downloader',
-        '[✅] Bot Information (versi, tech used, etc.)',
-        '[✅] Feedback Request Fitur',
-        '[✅] Donasi Semi-Kemanusiaan',
+        `[⚙] Pengingat Pesan - ${config.botShortName} bisa ingetin kamu dengan pesan di pagi, siang, atau sore.\n`,
         `😎 Kamu juga bisa request fitur yang belum ada lho, atau punya saran tertentu, bisa langsung kirim ke ${config.botShortName} dengan format :`,
         '`.request [request fitur/saran perbaikan]`',
-        `Request akan ${config.botShortName} informasikan ke creator. 🫡\n`,
+        `Request akan ${config.botShortName} informasikan ke creator.\n`,
     ];
 
     // Merge the array of strings to be as a message
