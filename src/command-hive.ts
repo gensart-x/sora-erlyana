@@ -12,6 +12,7 @@ import { ghola } from '@services/external/ghola'
 import { requestInfo } from '@services/internal/request-info'
 import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
+import { cookpadRecipe } from '@services/external/cookpad'
 
 type Commands = {
     [key: string]: (client: Client, message: Message) => any
@@ -29,6 +30,9 @@ const commands: Commands = {
     // * Help Information
     '.help': commandGuide,
     '.botinfo': botInfo,
+
+    // * Cookpad
+    '.resep': cookpadRecipe,
 
     // * Quotes
     '.quotes': getForismaticQuotes,
