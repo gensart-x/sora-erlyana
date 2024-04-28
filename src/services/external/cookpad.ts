@@ -50,7 +50,7 @@ const getRecipeList = (rawRecipeDom: string): Recipes => {
         $('[data-search-tracking-id-name-value="recipe_id"]')
             .children('li[itemprop="itemListElement"]').toArray().map(recipeDom => ({
                 name: $(recipeDom).find('a.block-link__main').text().trim().replaceAll('\n', ''),
-                backlink: COOKPAD_URL.substring(0, COOKPAD_URL.length - 1) + $(recipeDom).find('a.block-link__main').attr('href'),
+                backlink: COOKPAD_URL.replaceAll('id/cari/', '') + $(recipeDom).find('a.block-link__main').attr('href'),
                 author: $(recipeDom).find('span.text-cookpad-gray-600.text-cookpad-12').text().trim().replaceAll('\n', ''),
                 duration: $(recipeDom).find('ul.clamp-1.text-cookpad-12').children('li').first().find('span.mise-icon-text').text().trim().replaceAll('\n', '') ?? '-'
             }));
@@ -92,7 +92,9 @@ const cookpadRecipe: Executor = async (client, message) => {
         })
         recipeMessage.unshift(`Berikut hasil pencarian ${config.botShortName} tentang "${searchQuery}" di Cookpad.\n\n`);
     } else {
-        wweb.replyMessage(message, `${config.botShortName} tidak menemukan resep itu di Cookpad, coba deh pakai keyword yang lain 😁`);
+        wweb.replyMessage(message, `${config.botShortName} tidak menemukan resep itu di Cookpad, coba deh pakai keyword yang lain 😁`, {
+            linkPreview: false
+        });
         return 0;
     }
 
