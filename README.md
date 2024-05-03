@@ -41,6 +41,7 @@ Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
 -   Random Couple Anime Profile Pictures 👭
 -   Translate English to Indonesia, and otherwise 🌐
 -   Random Wise Quotes 🦜
+-   Cookpad Recipe Search 👨‍🍳
 -   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
 
 # Overview
