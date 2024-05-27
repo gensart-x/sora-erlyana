@@ -1,4 +1,4 @@
-<img width="300" height="300" src="https://i.ibb.co/7y1v1q4/hour.png">
+<img width="300" height="300" src="https://i.ibb.co.com/7y1v1q4/hour.png">
 
 > This project is still on development, so it might have a massive changes, stay tuned !
 
