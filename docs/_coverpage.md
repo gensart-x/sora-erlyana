@@ -1,4 +1,4 @@
-<img width="200" src="https://i.ibb.co/7y1v1q4/hour.png">
+<img width="200" src="https://i.ibb.co.com/7y1v1q4/hour.png">
 
 # sora-erlyana <small>1.0.0</small>
 
