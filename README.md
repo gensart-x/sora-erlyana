@@ -5,25 +5,30 @@
 ![forthebadge](https://img.shields.io/github/last-commit/gensart-x/sora-erlyana/main?display_timestamp=author&style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fgensart-x%2Fsora-erlyana)
 
 WhatsApp bot powered by Node.js, with several daily commands that might be useful for you
+
 <p>
     <img src="https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana">
     <img src="https://m3-markdown-badges.vercel.app/issues/6/1/gensart-x/sora-erlyana">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg" title="You can use/fork this for your own development !">
 </p>
 
-# Preview (v1.0.0)
+# Preview (v1.1.1)
 
 The preview might take a while to load sometimes, depends on your connection.
 
-![preview of the bot](https://i.ibb.co/BKDnYQD/whatsapp-bot-preview.gif)
+![preview of the bot](https://i.ibb.co.com/3FHp1kc/preview-sora-erlyana-1-1-1.gif)
 
 ## Want to try it out ?
+
 Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
+
 > ⚠ Do note too that if you want to use Sora, USE, IT, WISELY. Or I will remove the try-out link above and block your number from Sora.
 
-# Technology Used <!-- {docsify-ignore} -->
+## Current Status 🟡
 
-> This project is still on development 🚧, so it might have a massive changes, so stay tuned !
+I don't have any new feature ideas for this bot at the moment, but I'm keeping an eye on the repo for updates or errors.
+
+# Technology Used <!-- {docsify-ignore} -->
 
 ![Axios HTTP Client](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
 ![Debian Bookworm 12](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
@@ -43,6 +48,12 @@ Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
 -   Random Wise Quotes 🦜
 -   Cookpad Recipe Search 👨‍🍳
 -   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
+
+# Hall of Fame 👑
+
+Here lies list of awesome guys who made a request or contribution on "this" repository:
+
+-   Still none :)
 
 # Overview
 
@@ -88,9 +99,9 @@ npm run build
 -   Try to send `.help` to the WhatsApp you integrates in. It should return available commands as a response.
 
 <br>
-Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">here</a>  
+Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">here</a>
 
-Current Stable Version : `1.0.0`
+Current Stable Version : `1.1.1`
 
 <a href="https://teer.id/gensart">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg">
