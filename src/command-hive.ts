@@ -14,7 +14,7 @@ import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
 import { cookpadRecipe } from '@services/external/cookpad'
 import coloredText from '@services/external/colored-text'
-import imageHd from './services/external/image-hd'
+import imageHd from '@services/external/image-hd'
 
 type Commands = {
     [key: string]: Executor

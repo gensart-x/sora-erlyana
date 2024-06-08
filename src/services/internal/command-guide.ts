@@ -5,8 +5,8 @@ import config from '@/env'
 const commandGuide: Executor = async (client, message) => {
 
     const commandListMessage: Array<string> = [
-        `Hai, aku ${config.botName}, siap membantu kamu untuk kegiatan harianmu`,
-        'Btw, dibawah ini list command yang tersedia: (Bisa ketik perintahnya aja untuk informasi setiap perintahnya ya)\n',
+        `Hai, aku ${config.botName},`,
+        '==== LIST PERINTAH ====\n',
         'ℹ *Informasi*',
         `.botinfo - Informasi tentang ${config.botName}\n`,
         '🦜 *Quotes*',

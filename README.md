@@ -2,17 +2,15 @@
     <img width="250" height="250" src="https://i.ibb.co/7y1v1q4/hour.png">
 </p>
 
-![forthebadge](https://img.shields.io/github/last-commit/gensart-x/sora-erlyana/main?display_timestamp=author&style=for-the-badge&logo=github&link=https%3A%2F%2Fgithub.com%2Fgensart-x%2Fsora-erlyana)
-
 WhatsApp bot powered by Node.js, with several daily commands that might be useful for you
 
 <p>
     <img src="https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana">
     <img src="https://m3-markdown-badges.vercel.app/issues/6/1/gensart-x/sora-erlyana">
-    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg" title="You can use/fork this for your own development !">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg" title="You can use this repository for your own development!">
 </p>
 
-# Preview (v1.1.1)
+# Preview
 
 The preview might take a while to load sometimes, depends on your connection.
 
@@ -26,7 +24,7 @@ Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
 
 ## Current Status 🟢
 
-Actively maintained, this June 2024 will come some new features for Sora.
+Actively maintained, if you have any feedback, please drop it at Issues tab.
 
 # Technology Used <!-- {docsify-ignore} -->
 
@@ -41,12 +39,13 @@ Actively maintained, this June 2024 will come some new features for Sora.
 # Features
 
 -   Image to sticker 📸
+-   Meme sticker maker 😀
 -   AI-assisted QNA 🧠
--   TextPro styled-text generation✨
--   Random Couple Anime Profile Pictures 👭
+-   TextPro styled-text generator✨
+-   Random couple anime profile pictures 👭
 -   Translate English to Indonesia, and otherwise 🌐
--   Random Wise Quotes 🦜
--   Cookpad Recipe Search 👨‍🍳
+-   Random wise quotes 🦜
+-   Cookpad recipe search 👨‍🍳
 -   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
 
 # Hall of Fame 👑
@@ -99,9 +98,16 @@ npm run build
 -   Try to send `.help` to the WhatsApp you integrates in. It should return available commands as a response.
 
 <br>
-Seek the documentation at : <a href="https://gensart-x.github.io/sora-erlyana">here</a>
 
-Current Stable Version : `1.1.1`
+Seek the documentation at :
+
+<a href="https://gensart-x.github.io/sora-erlyana">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docsify/docsify1.svg">
+</a>
+
+<br>
+
+Current Stable Version : `1.2`
 
 <a href="https://teer.id/gensart">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg">

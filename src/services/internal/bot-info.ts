@@ -9,8 +9,8 @@ const botInfo: Executor = async (client, message) => {
         `Nama Panggilan: ${config.botShortName}`,
         `Owner: ${config.ownerName}\n`,
 
-        'Tahun Rilis:' + 2024,
-        'Versi Saat Ini:' + '1.1.1 - Aralyana',
+        'Tahun Rilis: ' + 2024,
+        'Versi Saat Ini: ' + '1.2 - Aralyana',
         'Teknologi Digunakan :',
         '- NodeJS v20',
         '- TypeScript',

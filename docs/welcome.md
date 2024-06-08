@@ -17,6 +17,6 @@
 
 !> This application uses `whatsapp-web.js` as a primary library. Keep in mind if you want to use this app, I assume you did already know that **WhatsApp terms & conditions do not allow any bots or automation** on its services. So, I do not responsible for any banning happen to your WhatsApp account by using this app, please use it wisely. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number and still safe until now.
 
-Current Stable Version : `1.1.1`
+Current Stable Version : `1.2`
 
 #### Can't see the sidebar on mobile ? The button is on your bottom left screen. <!-- {docsify-ignore} -->
