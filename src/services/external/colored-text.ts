@@ -19,7 +19,7 @@ const SPOOFED_USER_AGENT =
 const getColoredText = async (text: string): Promise<ColoredText> => {
 
     const url = API_URL + '?' + querystring.encode({
-        text: text
+        text: text.replaceAll('\n', '%0A')
     });
 
     try {
