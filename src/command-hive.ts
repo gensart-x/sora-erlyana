@@ -13,6 +13,7 @@ import { requestInfo } from '@services/internal/request-info'
 import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
 import { cookpadRecipe } from '@services/external/cookpad'
+import coloredText from '@services/external/colored-text'
 
 type Commands = {
     [key: string]: (client: Client, message: Message) => any
@@ -51,6 +52,7 @@ const commands: Commands = {
     // * Image to sticker
     '.s': imageToSticker,
     '.st': imageToStickerText,
+    '.attp': coloredText,
 
     // * Text Pro Image Generation
     '.neon': textProSingleTextRouter,
