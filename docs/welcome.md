@@ -2,21 +2,21 @@
 
 #### WhatsApp bot powered by Node.js, with several daily commands that might be useful for you !
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.png)](https://nodejs.org)
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.png)](https://web.pln.co.id/tentang-kami/profil-perusahaan)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+![](https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana)
+![](https://m3-markdown-badges.vercel.app/issues/6/1/gensart-x/sora-erlyana)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg)
 
-# Technology Used
+# Technology Used <!-- {docsify-ignore} -->
 
-- NodeJS
-- TypeScript
-- whatsapp-web.js
-- Debian
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/JSON/json2.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/NodeJS/nodejs1.svg)
+![](https://ziadoua.github.io/m3-Markdown-Badges/badges/TypeScript/typescript1.svg)
 
-# Overview
+# Overview <!-- {docsify-ignore} -->
 
 !> This application uses `whatsapp-web.js` as a primary library. Keep in mind if you want to use this app, I assume you did already know that **WhatsApp terms & conditions do not allow any bots or automation** on its services. So, I do not responsible for any banning happen to your WhatsApp account by using this app, please use it wisely. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number and still safe until now.
 
 Current Stable Version : `1.1.1`
 
-#### Can't see the sidebar on mobile ? The button is on your bottom left screen <!-- {docsify-ignore} -->
+#### Can't see the sidebar on mobile ? The button is on your bottom left screen. <!-- {docsify-ignore} -->

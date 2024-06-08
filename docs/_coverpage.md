@@ -2,11 +2,11 @@
 
 # sora-erlyana <small>1.1.1</small>
 
-> A wasap bot powered by wwebjs.dev, made open-source with 💚 for you.
+> A wasap bot powered by wwebjs.dev
 
 -   Simple and useful
--   Build using Node.js, written in Typescript
--   Open Source, you can expand it for your own!
+-   Built under Node.js, written in Typescript
+-   Open Source, made with 💚 for you.
 
 [GitHub](https://github.com/gensart-x/sora-erlyana/)
-[Get Started](welcome)
+[Overview](welcome)

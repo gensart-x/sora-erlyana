@@ -24,9 +24,9 @@ Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
 
 > ⚠ Do note too that if you want to use Sora, USE, IT, WISELY. Or I will remove the try-out link above and block your number from Sora.
 
-## Current Status 🟡
+## Current Status 🟢
 
-I don't have any new feature ideas for this bot at the moment, but I'm keeping an eye on the repo for updates or errors.
+Actively maintained, this June 2024 will come some new features for Sora.
 
 # Technology Used <!-- {docsify-ignore} -->
 
