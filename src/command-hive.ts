@@ -14,9 +14,10 @@ import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
 import { cookpadRecipe } from '@services/external/cookpad'
 import coloredText from '@services/external/colored-text'
+import imageHd from './services/external/image-hd'
 
 type Commands = {
-    [key: string]: (client: Client, message: Message) => any
+    [key: string]: Executor
 }
 type Executor = (client: Client, message: Message) => void
 
@@ -53,6 +54,9 @@ const commands: Commands = {
     '.s': imageToSticker,
     '.st': imageToStickerText,
     '.attp': coloredText,
+
+    // * Picture Feature
+    '.hd': imageHd,
 
     // * Text Pro Image Generation
     '.neon': textProSingleTextRouter,
