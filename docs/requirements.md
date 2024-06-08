@@ -25,4 +25,4 @@ Ghola API key is needed for built-in feature : AI with `.tanya` command. It hits
 
 ## **🔴 IMPORTANT NOTICE 🔴** <!-- {docsify-ignore} -->
 
-This project greatly having use of [whatsapp-web.js](https://wwebjs.dev/), and maybe **if you are running on a `no-gui` Linux image (Server, or Linux OS that did not installed GUI system)**, you may need to see and follow this page first : [Click Me](https://wwebjs.dev/guide/#installation-on-no-gui-systems)
+This project greatly having use of [whatsapp-web.js](https://wwebjs.dev/), and maybe **if you are running on a `no-gui` Linux image (Server, or Linux OS that did not installed GUI system)**, you may need to see and follow this page first : [Click Me](https://wwebjs.dev/guide/installation.html#installation-on-linux)
