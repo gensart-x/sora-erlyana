@@ -33,10 +33,11 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ~/production_space/sora-erlyana
+            cd ${{ secrets.PROJECT_PATH }}
             git reset --hard
             git clean -df
+            git fetch origin main
             git pull origin main
             npm i
             npm run build
-            systemctl --user restart sora-erlyana
+            systemctl --user restart ${{ SYSTEMD_NAME }}
