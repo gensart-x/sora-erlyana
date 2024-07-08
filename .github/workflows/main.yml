@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy Node to Production Server
+name: Deploy Sora to Server
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -33,10 +33,11 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ~/production_space/sora-erlyana
+            cd ${{ secrets.PROJECT_PATH }}
             git reset --hard
             git clean -df
+            git fetch origin main
             git pull origin main
             npm i
             npm run build
-            systemctl --user restart sora-erlyana
+            ${{ secrets.RESTART_SORA_ERLYANA }}
