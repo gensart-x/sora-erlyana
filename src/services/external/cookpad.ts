@@ -104,10 +104,6 @@ const cookpadRecipe: Executor = async (client, message) => {
     return 0;
 }
 
-(async () => {
-    console.log(await getCookpadRecipe('rendang'));
-})()
-
 export {
     cookpadRecipe
 }
