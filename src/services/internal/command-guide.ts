@@ -5,6 +5,7 @@ import config from '@/env'
 const commandGuide: Executor = async (client, message) => {
 
     const commandListMessage: Array<string> = [
+        '> This bot currently using Indonesian language, more coming soon',
         `Hai, aku ${config.botName},`,
         '==== LIST PERINTAH ====\n',
         'ℹ *Informasi*',
@@ -27,7 +28,7 @@ const commandGuide: Executor = async (client, message) => {
         '.attp [teks]\n',
         '🖼 *Fitur Gambar*',
         '.hd (kirim bersama gambarnya) - Jernihkan Gambar\n',
-        '🎨 *TextPro (Buat teks jadi gambar, dengan gaya)*',
+        '🎨 *TextPro (🔴 FITUR SEDANG DINONAKTIFKAN)*',
         '.neon',
         '.lunar',
         '.thunder',

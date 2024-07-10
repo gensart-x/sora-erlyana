@@ -1,6 +1,6 @@
 {
   "name": "sora-erlyana",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "wasap bot, powered by Node.js+whatsapp-web.js",
   "main": "dist/index.js",
   "type": "commonjs",

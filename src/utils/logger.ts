@@ -4,6 +4,7 @@ import axios, { AxiosResponse } from 'axios'
 
 const LOGS_DIRECTORY: string = 'logs';
 const ERROR_LOG_FILE: string = 'error-log.txt';
+const TIME_API_ENDPOINT: string = 'https://timeapi.io/api/Time/current/zone?timeZone=Asia/Jakarta';
 
 type TimeResponse = {
     year: number,
@@ -20,10 +21,10 @@ type TimeResponse = {
  */
 const retrieveIndonesiaTime = async (): Promise<string> => {
     try {
-        const response: AxiosResponse = await axios.get('https://timeapi.io/api/Time/current/zone?timeZone=Asia/Jakarta');
+        const response: AxiosResponse = await axios.get(TIME_API_ENDPOINT);
         const time: TimeResponse = response.data;
 
-        return `${time.year}-${time.month}:${time.day} ${time.hour}:${time.minute}:${time.seconds}`;
+        return `${time.year}-${time.month}-${time.day} ${time.hour}:${time.minute}:${time.seconds}`;
     } catch (error) {
         return `NO_ESTABLISHED_TIME`;
     }

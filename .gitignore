@@ -9,6 +9,7 @@ lerna-debug.log*
 # * Project no-more-need-versioning files
 assets/feature-request.json
 logs/*
+logs/error-log.txt
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

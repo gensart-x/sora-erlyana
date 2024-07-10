@@ -17,6 +17,9 @@ const textProSingleTextRouter: Executor = async (client: Client, message: Messag
     const command: string = message.body.split(' ')[0];
     let url: string;
 
+    wweb.replyMessage(message, 'Fitur TextPro saat ini sedang ditangguhkan. Maaf 🙏')
+    return;
+
     switch (command) {
         case '.neon':
             url = 'https://textpro.me/neon-light-text-effect-online-882.html';

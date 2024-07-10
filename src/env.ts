@@ -7,7 +7,7 @@ import 'dotenv/config';
  */
 const environmentConfiguration = {
     /**
-     * The property name clearly says it, this is for global configuration
+     * The property name clearly says it
      */
     isSendingMessageEnabled: true,
 
