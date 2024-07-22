@@ -52,9 +52,9 @@ const getlistMails: Executor = async (_, message) => {
 const getMailMessages: Executor = async (_, message) => {
     try {
 
-        const email = message.body.split('@');
+        const email = message.body.split(' ').at(1)?.split('@');
 
-        if (email.length != 2) {
+        if (email?.length != 2) {
             wweb.replyMessage(message, 'Format email tidak sesuai.')
             return 0
         }
