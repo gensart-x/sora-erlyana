@@ -69,19 +69,19 @@ const getMailMessages: Executor = async (_, message) => {
 
         if (response.status == 200) {
             const mailBox: Mail[] = response.data;
-            let mailBoxMessage: string[] = [
-                `Berikut adalah daftar email yang masuk ke alamat email: ${email}\n`
-            ];
-
             if (mailBox.length == 0) {
                 wweb.replyMessage(message, 'Tidak ada pesan email masuk ke alamat email yang anda masukkan. Jika email baru saja dikirim, tunggu sekitar 5 menit untuk mengecek kembali.')
                 return 0;
             }
 
+            let mailBoxMessage: string[] = [
+                `Berikut adalah daftar email yang masuk ke alamat email: ${email.join('@')}\n`
+            ];
+
             mailBox.forEach(mail => {
                 mailBoxMessage.push(
-                    `ID: *${mail.id}*\n` +
-                    `Dari: *${mail.from}*\n` +
+                    `ID: ${mail.id}\n` +
+                    `Dari: ${mail.from}\n` +
                     `Subjek Email: *${mail.subject}*\n`
                 )
             })
