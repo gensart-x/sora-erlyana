@@ -15,6 +15,7 @@ import { botInfo } from '@services/internal/bot-info'
 import { cookpadRecipe } from '@services/external/cookpad'
 import coloredText from '@services/external/colored-text'
 import imageHd from '@services/external/image-hd'
+import { getlistMails, getMailMessages, readMail } from '@services/external/onesecmail'
 
 type Commands = {
     [key: string]: Executor
@@ -30,6 +31,10 @@ const commands: Commands = {
     '.request': requestInfo,
 
     // * Help Information
+    '.commands': commandGuide,
+    '.perintah': commandGuide,
+    '.list': commandGuide,
+    '.menu': commandGuide,
     '.help': commandGuide,
     '.botinfo': botInfo,
 
@@ -58,22 +63,10 @@ const commands: Commands = {
     // * Picture Feature
     '.hd': imageHd,
 
-    // * Text Pro Image Generation
-    '.neon': textProSingleTextRouter,
-    '.lunar': textProSingleTextRouter,
-    '.thunder': textProSingleTextRouter,
-    '.shadow': textProSingleTextRouter,
-    '.snow': textProSingleTextRouter,
-    '.winter': textProSingleTextRouter,
-    '.frozen': textProSingleTextRouter,
-    '.artistic-typography': textProSingleTextRouter,
-    '.gradient-neon': textProSingleTextRouter,
-    '.blackpink': textProSingleTextRouter,
-    '.sliced-effect': textProSingleTextRouter,
-    '.red-batman': textProSingleTextRouter,
-    '.neon-valentine': textProSingleTextRouter,
-    '.neon-cube': textProSingleTextRouter,
-    '.blackpink-logo': textProSingleTextRouter,
+    // * Email generation
+    '.buatemail': getlistMails,
+    '.cekemail': getMailMessages,
+    '.bacaemail': readMail,
 
     // * Donation
     '.donasi': donation

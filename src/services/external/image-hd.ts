@@ -67,7 +67,7 @@ const imageHd: Executor = async (client, message) => {
         if (media == undefined) {
             wweb.replyMessage(
                 message,
-                `${config.botShortName} perlu gambarnya untuk dijernihkan, ${contact.pushname ?? ''}`
+                `${config.botShortName} perlu gambarnya untuk di HD kan, ${contact.pushname ?? ''}`
             );
             return 0;
         }
