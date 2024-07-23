@@ -2,7 +2,7 @@ import { Executor } from '@/command-hive';
 import * as wweb from '@utils/wweb';
 import fs from 'fs/promises';
 
-const requestInfo: Executor = async (client, message) => {
+const requestInfo: Executor = async (_, message) => {
     let request = message.body.split(' ').slice(1).join(' ');
 
     if (request == '') {

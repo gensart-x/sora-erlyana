@@ -23,7 +23,7 @@ client.on('qr', qr => {
 
 client.on('message', message => routeCommand(client, message))
 
-client.on('loading_screen', async (percent, message) => {
+client.on('loading_screen', async (_, message) => {
     console.log(`State:  ${message}`);
 })
 
@@ -42,4 +42,7 @@ client.on('disconnected', (message: string) => {
 console.log('==== WhatsApp Bot ====')
 console.log('Initializing Bot Engine...')
 console.log(`Bot name : ${config.botName}`)
+console.log(`Bot short name : ${config.botShortName}`)
+console.log(`Bot owner name : ${config.ownerName}`)
+console.log(`Bot able to send reply : ${(config.isSendingMessageEnabled) ? 'Enabled' : 'Disabled'}`)
 client.initialize();

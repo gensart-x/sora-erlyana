@@ -5,7 +5,7 @@ import config from '@/env'
 const commandGuide: Executor = async (client, message) => {
 
     const commandListMessage: Array<string> = [
-        '> This bot currently using Indonesian language, more coming soon',
+        '> This bot currently using Indonesian language, more languages are planned! Want to help? Email me!🥰\n',
         `Hai, aku ${config.botName},`,
         '==== LIST PERINTAH ====\n',
         'ℹ *Informasi*',

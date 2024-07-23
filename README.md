@@ -10,6 +10,12 @@ WhatsApp bot powered by Node.js, with several daily commands that might be usefu
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceCCBYSA/licenceccbysa1.svg" title="You can use this repository for your own development!">
 </p>
 
+# Documentation
+
+<a href="https://gensart-x.github.io/sora-erlyana">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docsify/docsify1.svg">
+</a>
+
 # Preview
 
 The preview might take a while to load sometimes, depends on your connection.
@@ -98,16 +104,6 @@ npm run build
 -   Try to send `.help` to the WhatsApp you integrates in. It should return available commands as a response.
 
 <br>
-
-Seek the documentation at :
-
-<a href="https://gensart-x.github.io/sora-erlyana">
-    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docsify/docsify1.svg">
-</a>
-
-<br>
-
-Current Stable Version : `1.2`
 
 <a href="https://teer.id/gensart">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg">

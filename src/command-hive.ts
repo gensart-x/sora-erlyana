@@ -1,6 +1,5 @@
 import { Client, Message } from 'whatsapp-web.js'
 import { getForismaticQuotes } from '@services/external/quote-v1'
-import { textProSingleTextRouter } from '@services/external/textpro'
 import commandGuide from '@services/internal/command-guide'
 import imageToSticker from '@services/internal/image-to-sticker'
 import { translateEnglishToIndo, translateIndoToEnglish } from '@services/external/translate'
@@ -24,7 +23,7 @@ type Executor = (client: Client, message: Message) => void
 
 const commands: Commands = {
 
-    // ! Administrative commands
+    // ! Unprotected administrative commands
     '.log': log,
 
     // * Request Feature
