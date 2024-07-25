@@ -2,7 +2,7 @@ import * as translate from '@utils/translation'
 import { Executor } from '@/command-hive'
 import * as wweb from '@utils/wweb'
 
-const translateEnglishToIndo: Executor = async (client, message) => {
+const translateEnglishToIndo: Executor = async (_, message) => {
     let text: string = message.body;
 
     // Delete command from text
@@ -17,7 +17,7 @@ const translateEnglishToIndo: Executor = async (client, message) => {
     }
 }
 
-const translateIndoToEnglish: Executor = async (client, message) => {
+const translateIndoToEnglish: Executor = async (_, message) => {
     let text: string = message.body;
 
     // Delete command from text

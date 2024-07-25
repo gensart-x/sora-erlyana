@@ -18,7 +18,7 @@ WhatsApp bot powered by Node.js, with several daily commands that might be usefu
 
 # Preview
 
-The preview might take a while to load sometimes, depends on your connection.
+The preview may take a while to load sometimes, depends on your connection.
 
 ![preview of the bot](https://i.ibb.co.com/3FHp1kc/preview-sora-erlyana-1-1-1.gif)
 
@@ -26,7 +26,8 @@ The preview might take a while to load sometimes, depends on your connection.
 
 Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
 
-> ⚠ Do note too that if you want to use Sora, USE, IT, WISELY. Or I will remove the try-out link above and block your number from Sora.
+> [!NOTE]
+> Do note too that if you want to try Sora, USE, IT, WISELY. Or I will remove the try-out link above or block your number from Sora.
 
 ## Current Status 🟢
 
@@ -35,7 +36,6 @@ Actively maintained, if you have any feedback, please drop it at Issues tab.
 # Technology Used <!-- {docsify-ignore} -->
 
 ![Axios HTTP Client](https://ziadoua.github.io/m3-Markdown-Badges/badges/Axios/axios1.svg)
-![Debian Bookworm 12](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
 ![Git Version Control](https://ziadoua.github.io/m3-Markdown-Badges/badges/Git/git1.svg)
 ![Javascript](https://ziadoua.github.io/m3-Markdown-Badges/badges/Javascript/javascript3.svg)
 ![JSON Interexchange format](https://ziadoua.github.io/m3-Markdown-Badges/badges/JSON/json3.svg)
@@ -47,12 +47,13 @@ Actively maintained, if you have any feedback, please drop it at Issues tab.
 -   Image to sticker 📸
 -   Meme sticker maker 😀
 -   AI-assisted QNA 🧠
--   TextPro styled-text generator✨
--   Random couple anime profile pictures 👭
+-   ~~TextPro styled-text generation✨~~
+-   Random couple anime profile pictures, and other things 👭
 -   Translate English to Indonesia, and otherwise 🌐
 -   Random wise quotes 🦜
 -   Cookpad recipe search 👨‍🍳
--   You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
+
+You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 With your idea, I'll try to reach the feature if it's possible, and put your name in here as a contribution !✨😎
 
 # Hall of Fame 👑
 
@@ -64,16 +65,14 @@ Here lies list of awesome guys who made a request or contribution on "this" repo
 
 This application uses `whatsapp-web.js` as a primary library. Keep in mind if you want to use this app, I assume you did already know that :
 
-```bash
-🔴 WhatsApp terms & conditions do not allow any unofficial bots or automation on its services.
-And this app should be used properly. I do not encourage any misuse that may hurt any person/group by the usage of this app. Please use it wisely, I create this for good reason.
-```
+> [!WARNING]
+> WhatsApp terms & conditions do not allow any unofficial bots or automation on its services. I do not encourage any misuse that may hurt any person/group by the usage of this app.
 
-So, I am not responsible for any banning happen to your WhatsApp account by using this app. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number and still safe until now.
+And also, I am not responsible for any banning happen to your WhatsApp account by using this app. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number (the link above) and still safe until now.
 
 # Quickstart
 
-The installation needs several steps, you might want to see the documentation for more information.
+The installation needs several steps, you may want to see the documentation for more information.
 
 -   For quick installation, first thing you can clone the app, no matter what method you use, below is the simple example one using Git command:
 

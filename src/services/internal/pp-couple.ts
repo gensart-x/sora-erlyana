@@ -48,7 +48,7 @@ const getImageBase64 = async (url: string): Promise<Image> => {
     }
 }
 
-const getPpCouple: Executor = async (client, message) => {
+const getPpCouple: Executor = async (_, message) => {
     try {
 
         const couple: CouplePhotos = getCoupleProfilePictures();
@@ -65,7 +65,7 @@ const getPpCouple: Executor = async (client, message) => {
     } catch (err) {
         const error: AxiosError = err as AxiosError;
         const contact = await message.getContact();
-        logger.logError('ppCouple - ' + error.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('ppCouple - ' + error.message + ' by ' + (contact?.pushname ?? 'unknown'));
         wweb.replyMessage(message, 'Maaf, terjadi kesalahan saat memuat PP couple. Silahkan coba kembali nanti ya.');
     }
 }

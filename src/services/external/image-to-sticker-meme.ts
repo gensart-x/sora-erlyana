@@ -161,7 +161,7 @@ const imageToStickerText: Executor = async (client, message) => {
     } catch (error) {
         const contact = await message.getContact();
         const err = error as AxiosError;
-        logger.logError('imageToStickerText - ' + err.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('imageToStickerText - ' + err.message + ' by ' + (contact?.pushname ?? 'unknown'));
 
         wweb.replyMessage(message, `${config.botShortName} gagal memproses gambar yang anda tujukan, mohon coba lagi dengan mengirim gambar baru.`)
     }

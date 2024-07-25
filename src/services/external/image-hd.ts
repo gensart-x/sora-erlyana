@@ -84,7 +84,7 @@ const imageHd: Executor = async (client, message) => {
     } catch (error) {
         const contact = await message.getContact();
         const err = error as axios.AxiosError;
-        logger.logError('imageHd - ' + err.message + ' by ' + contact?.pushname ?? 'No Name');
+        logger.logError('imageHd - ' + err.message + ' by ' + (contact?.pushname ?? 'No Name'));
 
         wweb.replyMessage(message, `${config.botShortName} gagal memproses gambar yang ${contact?.pushname} tujukan, mohon coba lagi dengan mengirim gambar baru.`)
     }

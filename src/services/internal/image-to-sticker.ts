@@ -3,7 +3,7 @@ import { Executor } from '@/command-hive'
 import * as wweb from '@utils/wweb'
 import config from '@/env'
 
-const imageToSticker: Executor = async (client, message) => {
+const imageToSticker: Executor = async (_, message) => {
     const contact = await message.getContact();
     let media: MessageMedia | undefined;
 

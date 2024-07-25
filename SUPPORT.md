@@ -33,4 +33,4 @@ For email support, please contact me at [geneshsarretsarretret@gmail.com].
 For social media directions, I have Instagram at `@gensart.ai`.
 
 Thank you.  
-And remember, your small help will have a positive impact for the others, stay helpful ! 😁
+And remember, your small help will have a positive impact for the app, stay helpful ! 😁

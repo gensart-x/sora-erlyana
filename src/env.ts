@@ -62,7 +62,12 @@ const environmentConfiguration = {
     /**
      * Trakteer Linkteer link, for donation support.
      */
-    trakteerLink: process.env.TRAKTEER_LINK
+    trakteerLink: process.env.TRAKTEER_LINK,
+
+    /**
+     * WhatsApp chat ID of the administrator
+     */
+    whatsappChatId: process.env.WHATSAPP_CHAT_ID
 }
 
 export default environmentConfiguration

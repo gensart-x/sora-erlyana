@@ -20,7 +20,7 @@ const indoSlangQuote: Executor = async (client, message) => {
     } catch (error) {
         const err = error as AxiosError;
         const contact = await message.getContact();
-        logger.logError('quoteIndoSlang - ' + err.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('quoteIndoSlang - ' + err.message + ' by ' + (contact?.pushname ?? 'unknown'));
 
         wweb.replyMessage(message, 'Maaf, terjadi kesalahan saat memuat quotes. Silahkan coba kembali nanti ya');
     }

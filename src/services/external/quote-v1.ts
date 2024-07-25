@@ -34,7 +34,7 @@ const getForismaticQuotes: Executor = async (client, message) => {
     } catch (e) {
         const contact = await message.getContact();
         const err = e as AxiosError | Error;
-        logger.logError('quoteV1Forismatic - ' + err.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('quoteV1Forismatic - ' + err.message + ' by ' + (contact?.pushname ?? 'unknown'));
 
         wweb.replyMessage(message, 'Gagal memuat quotes, silahkan coba lagi.')
     }

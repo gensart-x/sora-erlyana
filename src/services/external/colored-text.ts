@@ -68,7 +68,7 @@ const coloredText: Executor = async (client, message) => {
     } catch (error) {
         const contact = await message.getContact();
         const err = error as AxiosError;
-        logger.logError('ColoredText - ' + err.message + ' by ' + contact?.pushname ?? 'Unknown');
+        logger.logError('ColoredText - ' + err.message + ' by ' + (contact?.pushname ?? 'Unknown'));
 
         wweb.replyMessage(message, 'Gagal memproses gambar, silahkan coba lagi');
     }

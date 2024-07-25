@@ -53,7 +53,7 @@ const ghola: Executor = async (client, message) => {
     const token: string | null = await retrieveGholaToken();
     if (token == null) {
         wweb.replyMessage(message, `${config.botShortName} tidak dapat menjawab pertanyaanmu saat ini, maaf :(`);
-        logger.logError('tanyaGhola - Failed to retrieve Ghola AI token by ' + contact.pushname ?? 'unknown');
+        logger.logError('tanyaGhola - Failed to retrieve Ghola AI token by ' + (contact.pushname ?? 'unknown'));
         return 0;
     }
 
@@ -62,7 +62,7 @@ const ghola: Executor = async (client, message) => {
         wweb.replyMessage(message, answer);
     } else {
         wweb.replyMessage(message, `${config.botShortName} tidak dapat menjawab pertanyaanmu saat ini, maaf :(`);
-        logger.logError('tanyaGhola - Failed to retrieve Ghola question by ' + contact.pushname ?? 'unknown');
+        logger.logError('tanyaGhola - Failed to retrieve Ghola question by ' + (contact.pushname ?? 'unknown'));
     }
 }
 

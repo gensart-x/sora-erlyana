@@ -81,7 +81,7 @@ const instagramDownloader: Executor = async (client, message) => {
 
         const err = error as AxiosError;
         const contact = await message.getContact();
-        logger.logError('instagramDownloader - ' + err.cause ?? err.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('instagramDownloader - ' + (err.cause ?? err.message) + ' by ' + (contact?.pushname ?? 'unknown'));
         wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kegagalan saat memprosesnya. Silahkan coba kembali nanti ya! 🙏`);
     }
 }

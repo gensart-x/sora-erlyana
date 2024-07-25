@@ -63,7 +63,7 @@ const downloadTikTokVideo = async (tiktokUrl: string) => {
     return downloadMedia(downloadUrl);
 }
 
-const tiktokDownloader: Executor = async (client, message) => {
+const tiktokDownloader: Executor = async (_, message) => {
     
     const tiktokUrl = message.body.split(' ')[1];
 
@@ -82,7 +82,7 @@ const tiktokDownloader: Executor = async (client, message) => {
     } catch (err) {
         const error = err as AxiosError;
         const contact = await message.getContact();
-        logger.logError('tiktokDownloader - ' + error.message + ' by ' + contact?.pushname ?? 'unknown');
+        logger.logError('tiktokDownloader - ' + error.message + ' by ' + (contact?.pushname ?? 'unknown'));
         wweb.replyMessage(message, 'Maaf, terjadi kesalahan saat memuat video. Silahkan coba kembali nanti ya!');
     }
 }
