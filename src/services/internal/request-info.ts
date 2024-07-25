@@ -16,7 +16,10 @@ const requestInfo: Executor = async (client, message) => {
     await recordRequest(request)
     wweb.replyMessage(message, 'Terimakasih atas saran yang diberikan! 😁')
 
-    if (config.whatsappChatId) client.sendMessage(config.whatsappChatId, request)
+    if (config.whatsappChatId) {
+        client.sendMessage(config.whatsappChatId, `${config.ownerName}, baru saja ada yang melakukan request fitur:`)
+        client.sendMessage(config.whatsappChatId, request)
+    }
 }
 
 const recordRequest = async (text: string) => {

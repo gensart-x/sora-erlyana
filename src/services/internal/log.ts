@@ -22,7 +22,7 @@ const log: Executor = async (client, message) => {
             break;
         default:
             logFile = logger.ERROR_LOG_FILE;
-            wweb.replyMessage(message, 'Menampilkan log ERROR sebagai default')
+            wweb.sendMessage(client, message.from, 'Menampilkan log ERROR sebagai default')
             break;
     }
 

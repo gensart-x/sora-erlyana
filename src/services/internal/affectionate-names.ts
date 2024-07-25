@@ -10,7 +10,8 @@ const affectionateNames: Executor = async (client, message) => {
         selectedNames.push(nameList[Math.floor(Math.random() * (nameList.length - 1))])
     }
 
-    selectedNames.forEach(name => {
+    selectedNames.forEach(async name => {
+        await new Promise(resolve => setTimeout(resolve, [0, 1500][Math.round(Math.random())]))
         wweb.sendMessage(client, message.from, name)
     })
 }

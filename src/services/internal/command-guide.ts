@@ -16,7 +16,7 @@ const commandGuide: Executor = async (client, message) => {
         '🍪 Info - Info Penting',
         '.resep [nama resep/bahan] - Resep Masak dari Cookpad\n',
         '🎲 *Random*',
-        '.ppcouple - Gambar PP couple random\n',
+        '.ppcouple - Gambar PP couple random',
         '.panggilansayang - Panggilan untuk pasangan tersayang\n',
         '🤖 *Fitur AI*',
         '.tanya [pertanyaan/perintah] - Tanya apapun ke Sora sebagai AI -\n',
