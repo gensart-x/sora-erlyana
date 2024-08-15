@@ -39,7 +39,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "axios": "^1.6.7",
+    "axios": "^1.7.4",
     "axios-cookiejar-support": "^5.0.0",
     "bing-translate-api": "^4.0.0",
     "cheerio": "^1.0.0-rc.12",
