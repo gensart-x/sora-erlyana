@@ -51,36 +51,40 @@ const enhanceImage = async (base64Image: string): Promise<Image> => {
 
 const imageHd: Executor = async (client, message) => {
     try {
-        const contact: Contact = await message.getContact();
-        let media: MessageMedia | undefined;
+        // ! API is down, cannot use it.
+        wweb.sendMessage(client, message.from, 'API/Layanan ini sedang down, silahkan coba lagi nanti.');
+        return 0;
 
-        // Check if the user is referring a quoted message to be executed
-        // If so, retrieve the media if possible, otherwise retrieve from the primary message
-        if (message.hasQuotedMsg) {
-            const quotedMessage = await message.getQuotedMessage();
-            media = quotedMessage.hasMedia ? await quotedMessage.downloadMedia() : undefined;
-        } else {
-            media = message.hasMedia ? await message.downloadMedia() : undefined;
-        }
+        // const contact: Contact = await message.getContact();
+        // let media: MessageMedia | undefined;
 
-        // If this execution does not have any media, inform the user, and cancel it.
-        if (media == undefined) {
-            wweb.replyMessage(
-                message,
-                `${config.botShortName} perlu gambarnya untuk di HD kan, ${contact.pushname ?? ''}`
-            );
-            return 0;
-        }
+        // // Check if the user is referring a quoted message to be executed
+        // // If so, retrieve the media if possible, otherwise retrieve from the primary message
+        // if (message.hasQuotedMsg) {
+        //     const quotedMessage = await message.getQuotedMessage();
+        //     media = quotedMessage.hasMedia ? await quotedMessage.downloadMedia() : undefined;
+        // } else {
+        //     media = message.hasMedia ? await message.downloadMedia() : undefined;
+        // }
 
-        const image: Image = await enhanceImage(media.data);
+        // // If this execution does not have any media, inform the user, and cancel it.
+        // if (media == undefined) {
+        //     wweb.replyMessage(
+        //         message,
+        //         `${config.botShortName} perlu gambarnya untuk di HD kan, ${contact.pushname ?? ''}`
+        //     );
+        //     return 0;
+        // }
 
-        if (image.success) {
-            wweb.replyMessage(message, await MessageMedia.fromUrl(image.imageLink), {
-                sendMediaAsDocument: true
-            })
-        } else {
-            throw new Error(image.message ?? 'Gagal memproses gambar, dari API');
-        }
+        // const image: Image = await enhanceImage(media.data);
+
+        // if (image.success) {
+        //     wweb.replyMessage(message, await MessageMedia.fromUrl(image.imageLink), {
+        //         sendMediaAsDocument: true
+        //     })
+        // } else {
+        //     throw new Error(image.message ?? 'Gagal memproses gambar, dari API');
+        // }
     } catch (error) {
         const contact = await message.getContact();
         const err = error as axios.AxiosError;

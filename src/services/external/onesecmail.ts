@@ -14,7 +14,10 @@ type Mail = {
 
 const ONESEC_ENDPOINT: string = 'https://www.1secmail.com/api/v1/';
 
-const getlistMails: Executor = async (_, message) => {
+const getlistMails: Executor = async (client, message) => {
+    // ! API is down, cannot use it.
+    wweb.sendMessage(client, message.from, 'API/Layanan ini sedang down, silahkan coba lagi nanti.');
+    return 0;
 
     try {
         const response = await axios.get(ONESEC_ENDPOINT + '?action=genRandomMailbox&count=5');
@@ -49,102 +52,110 @@ const getlistMails: Executor = async (_, message) => {
     }
 }
 
-const getMailMessages: Executor = async (_, message) => {
-    try {
+const getMailMessages: Executor = async (client, message) => {
+    // ! API is down, cannot use it.
+    wweb.sendMessage(client, message.from, 'API/Layanan ini sedang down, silahkan coba lagi nanti.');
+    return 0;
 
-        const email = message.body.split(' ').at(1)?.split('@');
+    // try {
 
-        if (email?.length != 2) {
-            wweb.replyMessage(message, 'Format email tidak sesuai.')
-            return 0
-        }
+    //     const email = message.body.split(' ').at(1)?.split('@');
 
-        const endpoint = ONESEC_ENDPOINT + '?' + url.encode({
-            action: 'getMessages',
-            login: email[0],
-            domain: email[1]
-        })
+    //     if (email?.length != 2) {
+    //         wweb.replyMessage(message, 'Format email tidak sesuai.')
+    //         return 0
+    //     }
 
-        const response = await axios.get(endpoint);
+    //     const endpoint = ONESEC_ENDPOINT + '?' + url.encode({
+    //         action: 'getMessages',
+    //         login: email[0],
+    //         domain: email[1]
+    //     })
 
-        if (response.status == 200) {
-            const mailBox: Mail[] = response.data;
-            if (mailBox.length == 0) {
-                wweb.replyMessage(message, 'Tidak ada pesan email masuk ke alamat email yang anda masukkan. Jika email baru saja dikirim, tunggu sekitar 5 menit untuk mengecek kembali.')
-                return 0;
-            }
+    //     const response = await axios.get(endpoint);
 
-            let mailBoxMessage: string[] = [
-                `Berikut adalah daftar email yang masuk ke alamat email: ${email.join('@')}\n`
-            ];
+    //     if (response.status == 200) {
+    //         const mailBox: Mail[] = response.data;
+    //         if (mailBox.length == 0) {
+    //             wweb.replyMessage(message, 'Tidak ada pesan email masuk ke alamat email yang anda masukkan. Jika email baru saja dikirim, tunggu sekitar 5 menit untuk mengecek kembali.')
+    //             return 0;
+    //         }
 
-            mailBox.forEach(mail => {
-                mailBoxMessage.push(
-                    `ID: ${mail.id}\n` +
-                    `Dari: ${mail.from}\n` +
-                    `Subjek Email: *${mail.subject}*\n`
-                )
-            })
+    //         let mailBoxMessage: string[] = [
+    //             `Berikut adalah daftar email yang masuk ke alamat email: ${email.join('@')}\n`
+    //         ];
 
-            mailBoxMessage.push('\nAnda dapat menggunakan perintah ```.bacaemail {id dari mail}``` menggunakan ID dari salah satu mail diatas')
+    //         mailBox.forEach(mail => {
+    //             mailBoxMessage.push(
+    //                 `ID: ${mail.id}\n` +
+    //                 `Dari: ${mail.from}\n` +
+    //                 `Subjek Email: *${mail.subject}*\n`
+    //             )
+    //         })
 
-            wweb.replyMessage(message, mailBoxMessage.join('\n'))
-        } else {
-            wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kesalahan saat memuat alamat email, silahkan coba lagi nanti 🙏`)
-        }
-    } catch (error) {
-        const err = error as AxiosError
-        logger.logError(err.message)
+    //         mailBoxMessage.push('\nAnda dapat menggunakan perintah ```.bacaemail {id dari mail}``` menggunakan ID dari salah satu mail diatas')
 
-        wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kesalahan saat memuat alamat email, silahkan coba lagi nanti 🙏`)
-    }
+    //         wweb.replyMessage(message, mailBoxMessage.join('\n'))
+    //     } else {
+    //         wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kesalahan saat memuat alamat email, silahkan coba lagi nanti 🙏`)
+    //     }
+    // } catch (error) {
+    //     const err = error as AxiosError
+    //     logger.logError(err.message)
+
+    //     wweb.replyMessage(message, `Maaf, ${config.botShortName} mengalami kesalahan saat memuat alamat email, silahkan coba lagi nanti 🙏`)
+    // }
 }
 
-const readMail: Executor = async (_, message) => {
-    try {
-        const email = message.body.split(' ').at(1)
-        const id = message.body.split(' ').at(2)
+const readMail: Executor = async (client, message) => {
+    // ! API is down, cannot use it.
+    wweb.sendMessage(client, message.from, 'API/Layanan ini sedang down, silahkan coba lagi nanti.');
+    return 0;
 
-        if (email?.split('@').length != 2) {
-            wweb.replyMessage(message, 'Format email tidak sesuai')
-            return 0
-        }
+    // try {
+    //     const email = message.body.split(' ').at(1)
+    //     const id = message.body.split(' ').at(2)
 
-        if ((typeof id != 'string') || id == '') {
-            wweb.replyMessage(message, 'Harap sertakan ID pesan email juga.\nIkuti format berikut: `.bacaemail [alamat emailnya] [id dari pesan email]`')
-            return 0
-        }
+    //     if (email?.split('@').length != 2) {
+    //         wweb.replyMessage(message, 'Format email tidak sesuai')
+    //         return 0
+    //     }
 
-        const response = await axios.get(ONESEC_ENDPOINT + '?' + url.encode({
-            action: 'readMessage',
-            login: email.split('@').at(0),
-            domain: email.split('@').at(1),
-            id
-        }))
+    //     if ((typeof id != 'string') || id == '') {
+    //         wweb.replyMessage(message, 'Harap sertakan ID pesan email juga.\nIkuti format berikut: `.bacaemail [alamat emailnya] [id dari pesan email]`')
+    //         return 0
+    //     }
 
-        if (response.status == 200) {
-            const mailData = response.data
+    //     const response = await axios.get(ONESEC_ENDPOINT + '?' + url.encode({
+    //         action: 'readMessage',
+    //         login: email.split('@').at(0),
+    //         domain: email.split('@').at(1),
+    //         id
+    //     }))
 
-            if (mailData == 'Message not found') {
-                wweb.replyMessage(message, 'Tidak ada pesan email yang cocok dengan ID yang anda masukkan')
-                return 0
-            }
+    //     if (response.status == 200) {
+    //         const mailData = response.data
 
-            const mailMessage =
-                `Dikirim dari : ${mailData.from}\n` +
-                `Judul : *${mailData.subject}*\n\n` +
-                `${mailData.textBody}`
+    //         if (mailData == 'Message not found') {
+    //             wweb.replyMessage(message, 'Tidak ada pesan email yang cocok dengan ID yang anda masukkan')
+    //             return 0
+    //         }
 
-            wweb.replyMessage(message, mailMessage)
-        } else {
-            wweb.replyMessage(message, `${config.botShortName} mengalami kesalahan saat memuat email, silahkan coba lagi nanti🙏`)
-        }
-    } catch (error) {
-        const err = error as AxiosError
-        logger.logError(err.message)
+    //         const mailMessage =
+    //             `Dikirim dari : ${mailData.from}\n` +
+    //             `Judul : *${mailData.subject}*\n\n` +
+    //             `${mailData.textBody}`
 
-        wweb.replyMessage(message, `${config.botShortName} mengalami kesalahan saat memuat email, silahkan coba lagi nanti🙏`)
-    }
+    //         wweb.replyMessage(message, mailMessage)
+    //     } else {
+    //         wweb.replyMessage(message, `${config.botShortName} mengalami kesalahan saat memuat email, silahkan coba lagi nanti🙏`)
+    //     }
+    // } catch (error) {
+    //     const err = error as AxiosError
+    //     logger.logError(err.message)
+
+    //     wweb.replyMessage(message, `${config.botShortName} mengalami kesalahan saat memuat email, silahkan coba lagi nanti🙏`)
+    // }
 }
 
 export {

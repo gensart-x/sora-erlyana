@@ -1,6 +1,10 @@
 import { Client, Message } from 'whatsapp-web.js';
 
-type Middleware = (client: Client, message: Message, next: () => void) => void
+/**
+ * Middleware for incoming message request  
+ * Needs to return boolean, either true (continue) or false (stop there)
+ */
+type Middleware = (client: Client, message: Message) => Promise<boolean>
 
 class CommandMiddleware {
     events: Array<Middleware>
@@ -26,19 +30,17 @@ class CommandMiddleware {
      * Emits all registered middlewares
      * @param client the client of whatsappwebjs instance
      * @param message the message instance of whatsappwebjs instance
-     * @returns void
+     * @return Boolean whether the execution should continue or not
      */
-    emit(client: Client, message: Message) {
+    async emit(client: Client, message: Message): Promise<boolean> {
+        if (this.events.length == 0) return true;
 
-        if(this.events.length == 0) return 0;
+        for(const middleware of this.events) {
+            const isRequestDenied = await middleware(client, message) == false;
 
-        const next = (i: number) => {
-            if (i < this.events.length) {
-                this.events[i](client, message, () => next(i + 1))
-            }
+            if (isRequestDenied) return false;
         }
-
-        next(0)
+        return true;
     }
 }
 

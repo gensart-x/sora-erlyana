@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"No unit tests currently specified\" && exit 1",
     "build": "tsc && npx tsc-alias",
-    "dev": "nodemon --ext \"ts,json\" --exec \"tsx ./src/index.ts\"",
+    "dev": "nodemon --ext \"ts\" --exec \"tsx ./src/index.ts\"",
     "docs": "npx docsify serve docs -p 80",
     "serve": "node ./dist/index.js"
   },

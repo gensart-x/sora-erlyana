@@ -51,20 +51,24 @@ const getColoredText = async (text: string): Promise<ColoredText> => {
 
 const coloredText: Executor = async (client, message) => {
     try {
-        const contact = await message.getContact();
-        const text = message.body.split(' ').slice(1).join(' ');
+        // ! API is down, cannot use it.
+        wweb.sendMessage(client, message.from, 'API/Layanan ini sedang down, silahkan coba lagi nanti.');
+        return 0;
 
-        const image: ColoredText = await getColoredText(text);
+        // const contact = await message.getContact();
+        // const text = message.body.split(' ').slice(1).join(' ');
 
-        if (image.success) {
-            wweb.replyMessage(
-                message,
-                new MessageMedia(image.mimetype, image.image),
-                wweb.mediaStickerMetadata(contact?.pushname ?? 'Tanpa Nama')
-            )
-        } else {
-            throw new Error('Image is failed - ' + image.message);
-        }
+        // const image: ColoredText = await getColoredText(text);
+
+        // if (image.success) {
+        //     wweb.replyMessage(
+        //         message,
+        //         new MessageMedia(image.mimetype, image.image),
+        //         wweb.mediaStickerMetadata(contact?.pushname ?? 'Tanpa Nama')
+        //     )
+        // } else {
+        //     throw new Error('Image is failed - ' + image.message);
+        // }
     } catch (error) {
         const contact = await message.getContact();
         const err = error as AxiosError;

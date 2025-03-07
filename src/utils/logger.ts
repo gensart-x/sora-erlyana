@@ -36,9 +36,16 @@ const retrieveIndonesiaTime = async (): Promise<string> => {
  */
 const logError = async (message: string) => {
     const dateTime = await retrieveIndonesiaTime();
-    message = `[${dateTime}] - ${message}\n`
+    message = `[${dateTime}] - ${message}\n`;
 
-    fs.appendFile(path.join(LOGS_DIRECTORY, ERROR_LOG_FILE), message, _ => { });
+    // Create the log directory if it doesn't exist
+    fs.mkdirSync(path.join(LOGS_DIRECTORY), { recursive: true });
+
+    if (fs.existsSync(path.join(LOGS_DIRECTORY, ERROR_LOG_FILE))) {
+        fs.appendFile(path.join(LOGS_DIRECTORY, ERROR_LOG_FILE), message, _ => { });
+    } else {
+        fs.writeFileSync(path.join(LOGS_DIRECTORY, ERROR_LOG_FILE), message, 'utf-8');
+    }
 }
 
 /**
@@ -47,7 +54,8 @@ const logError = async (message: string) => {
  * @return {string}
  */
 const fetchLog = (logFile: string): string => {
-    return fs.readFileSync(path.join(LOGS_DIRECTORY, logFile), 'utf-8');
+    if (fs.existsSync(path.join(LOGS_DIRECTORY, logFile)) === false) return '';
+    else return fs.readFileSync(path.join(LOGS_DIRECTORY, logFile), 'utf-8');
 }
 
 /**
@@ -55,6 +63,7 @@ const fetchLog = (logFile: string): string => {
  * @param logFile Log file, take from available log files exported from logger
  */
 const clearLog = (logFile: string) => {
+    if (fs.existsSync(path.join(LOGS_DIRECTORY, logFile)) === false) return;
     return fs.writeFileSync(path.join(LOGS_DIRECTORY, logFile), '', 'utf-8');
 }
 

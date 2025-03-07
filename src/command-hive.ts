@@ -36,6 +36,11 @@ const commands: Commands = {
     '.list': commandGuide,
     '.menu': commandGuide,
     '.help': commandGuide,
+    'help': commandGuide,
+    'halo': commandGuide,
+    'hi': commandGuide,
+    'hai': commandGuide,
+    'hello': commandGuide,
     '.botinfo': botInfo,
 
     // * Cookpad
@@ -59,10 +64,10 @@ const commands: Commands = {
     // * Image to sticker
     '.s': imageToSticker,
     '.st': imageToStickerText,
-    '.attp': coloredText,
+    '.attp': coloredText, // ! API is down
 
     // * Picture Feature
-    '.hd': imageHd,
+    '.hd': imageHd, // ! API is down
 
     // * Email generation
     '.buatemail': getlistMails,

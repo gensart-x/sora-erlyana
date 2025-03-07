@@ -1,8 +1,9 @@
 import axios, { AxiosError } from 'axios';
+import url from 'querystring';
 import { Executor } from '@/command-hive';
 import config from '@/env';
 import * as wweb from '@utils/wweb';
-import url from 'querystring';
+import { logError } from '@utils/logger';
 
 type Recipe = {
     name: string,
@@ -16,7 +17,6 @@ type CookpadResponse = {
 }
 
 const COOKPAD_URL = 'https://api.kyoanna.insomnia247.nl/v1/cookpad?cari=';
-
 const getRecipes = async (recipeName: string): Promise<CookpadResponse> => {
     try {
         const response = await axios.get(COOKPAD_URL + url.escape(recipeName));
@@ -24,7 +24,7 @@ const getRecipes = async (recipeName: string): Promise<CookpadResponse> => {
         if (response.status == 200) {
             return {
                 success: true,
-                data: response.data
+                data: response.data.data
             }
         } else {
             return {
@@ -43,31 +43,46 @@ const getRecipes = async (recipeName: string): Promise<CookpadResponse> => {
 }
 
 const cookpadRecipe: Executor = async (client, message) => {
-    const searchQuery = message.body.split(' ').slice(1).join(' ');
-    const recipes = await getRecipes(searchQuery);
-    let recipeMessage: Array<string> = [];
+    try {
+        const searchQuery = message.body.split(' ').slice(1).join(' ');
 
-    if (recipes.success) {
-        recipes.data?.forEach((recipe: Recipe) => {
-            recipeMessage.unshift(
-                `Nama resep : *${recipe.name ?? '-'}*\n` +
-                `Durasi pembuatan : *${recipe.duration ?? '-'}*\n` +
-                `Pembuat resep : *${recipe.author ?? '-'}*\n` +
-                `Link resep : ${recipe.backlink ?? '-'}\n`
-            )
-        })
-        recipeMessage.unshift(`Berikut hasil pencarian ${config.botShortName} tentang "${searchQuery}" di Cookpad.\n\n`);
-    } else {
-        wweb.replyMessage(message, `${config.botShortName} tidak menemukan resep itu di Cookpad, coba deh pakai keyword yang lain 😁`, {
-            linkPreview: false
-        });
+        // Inform the user first
+        wweb.sendMessage(client, message.from, `Mencari resep "${searchQuery}" di Cookpad...`);
+
+        const recipes = await getRecipes(searchQuery);
+        let recipeMessage: Array<string> = [];
+
+        if (recipes.success) {
+            // Limit to 22 queries
+            if (recipes.data?.length ?? 0 > 22) {
+                recipes.data = recipes.data?.slice(0, 22) ?? null;
+            }
+
+            recipes.data?.forEach((recipe: Recipe) => {
+                recipeMessage.unshift(
+                    `Nama resep : *${recipe.name ?? '-'}*\n` +
+                    `Durasi pembuatan : *${recipe.duration ?? '-'}*\n` +
+                    `Pembuat resep : *${recipe.author ?? '-'}*\n` +
+                    `Link resep : ${recipe.backlink ?? '-'}\n`
+                )
+            })
+            recipeMessage.unshift(`Berikut hasil pencarian ${config.botShortName} tentang "${searchQuery}" di Cookpad.\n\n`);
+        } else {
+            wweb.replyMessage(message, `${config.botShortName} tidak menemukan resep itu di Cookpad, coba deh pakai keyword yang lain 😁`, {
+                linkPreview: false
+            });
+            return 0;
+        }
+
+        const compiledRecipeMessage: string = recipeMessage.join('\n-------\n');
+
+        wweb.replyMessage(message, compiledRecipeMessage);
         return 0;
+    } catch (error) {
+        const e = error as AxiosError;
+        wweb.replyMessage(message, "Maaf, terjadi kesalahan saat memuat resep. Silahkan coba kembali nanti ya!");
+        logError(e.message);
     }
-
-    const compiledRecipeMessage: string = recipeMessage.join('\n-------\n');
-
-    wweb.replyMessage(message, compiledRecipeMessage);
-    return 0;
 }
 
 export {

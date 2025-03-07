@@ -51,9 +51,6 @@ const environmentConfiguration = {
      */
     gholaProfileId: process.env.GHOLA_AI_PROFILE_ID,
 
-    //     BANK_ACCOUNT = 'your-bank-account-if-needed'
-    // TRAKTEER_LINK = 'teer.id/gensart
-
     /**
      * Bank Account Information, use if needed.
      */
