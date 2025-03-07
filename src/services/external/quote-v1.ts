@@ -25,8 +25,8 @@ const getForismaticQuotes: Executor = async (client, message) => {
         const translation = await translate.microsoft(quote.quote, 'en', 'id');
 
         if (translation.success) {
-            wweb.sendMessage(client, message.from, translation.text);
             wweb.sendMessage(client, message.from, 'By ' + quote.author);
+            wweb.sendMessage(client, message.from, translation.text);
         } else {
             wweb.replyMessage(message, translation.error ?? 'Gagal memuat quotes, silahkan coba lagi.');
         }

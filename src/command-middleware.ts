@@ -1,7 +1,15 @@
 import { CommandMiddleware } from '@utils/middleware';
 import fs from 'fs/promises';
+import imageToSticker from './services/internal/image-to-sticker';
 
 const middleware = new CommandMiddleware()
+
+/**
+ * ⚠ Do note that the order of the middleware matters  
+ * 
+ * Each middleware, return true if the execution should continue  
+ * or false if the execution should stop.
+ */
 
 // Try to mark the message as seen.
 middleware.use(async (client, message) => {
@@ -32,6 +40,16 @@ middleware.use(async (_, message) => {
         return true;
     } else {
         return false;
+    }
+})
+
+// Handle image-only message as sticker
+middleware.use(async (client, message) => {
+    if ((message.type == 'image') && (message.body == '')) {
+        imageToSticker(client, message)
+        return false;
+    } else {
+        return true;
     }
 })
 
