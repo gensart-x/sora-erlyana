@@ -14,6 +14,7 @@ const routeCommand = async (client: Client, message: Message) => {
                 if (extractedCommand in commands) {
                     commands[extractedCommand](client, message);
                 } else {
+                    if (message.isStatus) return
                     wweb.sendMessage(
                         client,
                         message.from,
