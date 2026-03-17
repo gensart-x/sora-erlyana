@@ -23,9 +23,6 @@ const commandGuide: Executor = async (client, message) => {
         '`.ppcouple` - Gambar PP couple random',
         '`.panggilansayang` - Panggilan untuk pasangan tersayang\n',
 
-        '🤖 *Fitur AI*',
-        '`.tanya [pertanyaan/perintah]` - Tanya apapun ke Sora sebagai AI -\n',
-
         '🌐 *Translate*',
         '`.indotoeng [text indo]` - Translate Indonesia ke Inggris',
         '`.engtoindo [text inggris]` - Translate Inggris ke Indonesia\n',
@@ -33,13 +30,6 @@ const commandGuide: Executor = async (client, message) => {
         '📷 *Teks/Gambar jadi Stiker*',
         '`.s` (kirim bersama dengan gambarnya)',
         '`.st [teks]` (kirim bersama dengan gambarnya)\n',
-        
-        '🔴 *Layanan yang sedang down*',
-        '`.attp` [teks]',
-        '`.hd` (kirim bersama gambarnya) - Jernihkan Gambar',
-        '`.buatemail` - Generate alamat email random',
-        '`.cekemail [email]` - Cek pesan dari alamat email yang digunakan',
-        '`.bacaemail [email] [id email]` - Baca pesan dari alamat email yang digunakan, dengan ID dari perintah `.cekemail`\n',
 
         '💚 Support Creator',
         `Kamu bisa membantu creator ${config.botShortName} dengan menfollow GitHub nya, Instagram, atau melakukan star pada repository di github.com/gensart-x/sora-erlyana.`,

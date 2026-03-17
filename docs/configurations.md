@@ -7,6 +7,6 @@ The value flow is like this :
 
 The `.env` provides the value of the configuration, and `env.ts` packages the values as an object, so you know each variable information.  
 
-Adjust the values like the bot name, IMGBB Key, Ghola API, etc. with your own information.  
+Adjust the values like the bot name, IMGBB Key, etc. with your own information.  
 
 After you done the instruction above, next to the [quickstart](quickstart) page.

@@ -7,7 +7,6 @@ import { imageToStickerText } from '@services/external/image-to-sticker-meme'
 import { log } from '@services/internal/log'
 import { indoSlangQuote } from '@services/internal/quote-indo-slang'
 import { getPpCouple } from '@services/internal/pp-couple'
-import { ghola } from '@services/external/ghola'
 import { requestInfo } from '@services/internal/request-info'
 import { donation } from '@services/internal/donation'
 import { botInfo } from '@services/internal/bot-info'
@@ -53,9 +52,6 @@ const commands: Commands = {
     // * Random Image
     '.ppcouple': getPpCouple,
     '.panggilansayang': affectionateNames,
-
-    // * AI-generated
-    '.tanya': ghola,
 
     // * Translation
     '.engtoindo': translateEnglishToIndo,

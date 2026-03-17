@@ -25,7 +25,7 @@ const botInfo: Executor = async (client, message) => {
 
         'Tahun Rilis: ' + 2024,
         'Aktif Selama: ' + formattedTime,
-        'Versi Saat Ini: ' + '1.3 - Aralyana Asana',
+        'Versi Saat Ini: ' + '1.4 - Aralyana Brava',
         'Teknologi Digunakan :',
         '- NodeJS v20',
         '- TypeScript',

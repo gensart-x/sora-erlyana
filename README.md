@@ -12,7 +12,7 @@ WhatsApp bot powered by Node.js, with several daily commands that might be usefu
 
 # Documentation
 
-<a href="https://gensart-x.github.io/sora-erlyana">
+<a href="https://gensart-x.github.io/sora-erlyana" target="_blank">
     <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Docsify/docsify1.svg">
 </a>
 
@@ -24,14 +24,14 @@ The preview may take a while to load sometimes, depends on your connection.
 
 ## Want to try it out ?
 
-Do the message here ! : <a href="https://wa.me/6285210846946">WhatsApp Sora</a>
+Do the message here ! : <a href="https://wa.me/6288274492746">WhatsApp Sora</a>
 
 > [!NOTE]
-> Do note too that if you want to try Sora, USE, IT, WISELY. Or I will remove the try-out link above or block your number from Sora.
+> Do note too that if you want to try Sora, use it wisely. Or I'll block your number from _her_.
 
 ## Current Status 🟢
 
-Actively maintained, if you have any feedback, please drop it at Issues tab.
+Actively watched for maintenance. If you have any feedback, you can drop it at Issues tab.
 
 # Technology Used <!-- {docsify-ignore} -->
 
@@ -46,8 +46,8 @@ Actively maintained, if you have any feedback, please drop it at Issues tab.
 
 -   Image to sticker 📸
 -   Meme sticker maker 😀
--   AI-assisted QNA 🧠
--   ~~TextPro styled-text generation✨~~
+-   ~~AI-assisted QNA 🧠~~ (the API gone)
+-   ~~TextPro styled-text generation✨~~ (the web scraping method needs an update)
 -   Random couple anime profile pictures, and other things 👭
 -   Translate English to Indonesia, and otherwise 🌐
 -   Random wise quotes 🦜
@@ -59,16 +59,16 @@ You have any idea ? Drop it in the Issue tab with `enhancement` label ! 😁 Wit
 
 Here lies list of awesome guys who made a request or contribution on "this" repository:
 
--   Still none :)
+-   oh my, still me only? 😅
 
 # Overview
 
-This application uses `whatsapp-web.js` as a primary library. Keep in mind if you want to use this app, I assume you did already know that :
+This application uses `whatsapp-web.js` as the primary library. Keep in mind if you want to use this app, I assume you did already know that :
 
 > [!WARNING]
-> WhatsApp terms & conditions do not allow any unofficial bots or automation on its services. I do not encourage any misuse that may hurt any person/group by the usage of this app.
+> WhatsApp's terms and conditions do not allow any unofficial bots or automations on its services. I do not encourage any misuse that may hurt any person, group, or entity by the usage of this app.
 
-And also, I am not responsible for any banning happen to your WhatsApp account by using this app. **I strongly suggest** you to use this app with your new or backup WhatsApp number. I use my second number (the link above) and still safe until now.
+And also, Any banning happen to your account is outside of my reach for responsibility. Well, **I strongly suggest** that you use this app with your new or backup account number. Though, I use my second number (the link above) and still safe until now.
 
 # Quickstart
 

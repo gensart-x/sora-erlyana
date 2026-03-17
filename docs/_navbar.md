@@ -1,2 +1,2 @@
-* [SoraErlyana Repo GitHub](https://github.com/gensart-x/sora-erlyana)
-* [Other Projects](https://gensart.my.id)
+* [GitHub](https://github.com/gensart-x/sora-erlyana)
+* [About Me](https://gensart.super.site)
