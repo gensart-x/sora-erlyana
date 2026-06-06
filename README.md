@@ -2,7 +2,7 @@
     <img width="250" height="250" src="https://i.ibb.co/7y1v1q4/hour.png">
 </p>
 
-WhatsApp bot powered by Node.js, with several daily commands that might be useful for you
+WhatsApp bot powered by Node.js, with several daily commands that might be useful for you ✨
 
 <p>
     <img src="https://m3-markdown-badges.vercel.app/stars/1/1/gensart-x/sora-erlyana">
