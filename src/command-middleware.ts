@@ -1,6 +1,7 @@
 import { CommandMiddleware } from '@utils/middleware';
 import fs from 'fs/promises';
 import imageToSticker from './services/internal/image-to-sticker';
+import config from '@/env';
 
 const middleware = new CommandMiddleware()
 
@@ -10,6 +11,14 @@ const middleware = new CommandMiddleware()
  * Each middleware, return true if the execution should continue  
  * or false if the execution should stop.
  */
+
+// If the message is from the bot owner, ignore it completely
+middleware.use(async (_, message) => {
+    if (message.from === config.whatsappChatId) {
+        return false;
+    }
+    return true;
+})
 
 // Try to mark the message as seen.
 middleware.use(async (client, message) => {
