@@ -3,6 +3,22 @@ import * as wweb from '@utils/wweb'
 import fs from 'fs/promises'
 import config from '@/env'
 
+const MAX_REQUEST_LENGTH = 500;
+
+/**
+ * Sanitize user input to prevent injection in stored records
+ * and forwarded WhatsApp messages
+ */
+const sanitizeInput = (text: string): string => {
+    // Strip newlines and control characters that could break JSON or inject content
+    return text
+        .replace(/[\r\n\t]/g, ' ')
+        .replace(/[\x00-\x1F\x7F]/g, '')
+        .replace(/\|/g, '/') // replace pipe to avoid spoofing the "oleh" separator
+        .trim()
+        .slice(0, MAX_REQUEST_LENGTH);
+};
+
 const requestInfo: Executor = async (client, message) => {
     let request = message.body.split(' ').slice(1).join(' ')
 
@@ -12,13 +28,15 @@ const requestInfo: Executor = async (client, message) => {
     }
 
     const contact = await message.getContact()
-    request = request + ' | oleh ' + (contact?.pushname ?? 'Tanpa Nama')
-    await recordRequest(request)
+    const sanitizedRequest = sanitizeInput(request);
+    const sanitizedName = sanitizeInput(contact?.pushname ?? 'Tanpa Nama');
+    const recordText = sanitizedRequest + ' | oleh ' + sanitizedName;
+    await recordRequest(recordText)
     wweb.replyMessage(message, 'Terimakasih atas saran yang diberikan! 😁')
 
     if (config.whatsappChatId) {
         client.sendMessage(config.whatsappChatId, `${config.ownerName}, baru saja ada yang melakukan request fitur:`)
-        client.sendMessage(config.whatsappChatId, request)
+        client.sendMessage(config.whatsappChatId, recordText)
     }
 }
 

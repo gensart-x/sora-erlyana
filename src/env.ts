@@ -64,7 +64,12 @@ const environmentConfiguration = {
     /**
      * WhatsApp chat ID of the administrator
      */
-    whatsappChatId: process.env.WHATSAPP_CHAT_ID
+    whatsappChatId: process.env.WHATSAPP_CHAT_ID,
+
+    /**
+     * Google Gemini API Key, see more at https://ai.google.dev
+     */
+    geminiToken: process.env.GEMINI_TOKEN,
 }
 
 export default environmentConfiguration

@@ -70,8 +70,16 @@ const tiktokDownloader: Executor = async (_, message) => {
     if ((tiktokUrl == undefined) || (tiktokUrl == '')) {
         wweb.replyMessage(
             message,
-            `${config.botShortName} tidak melihat adanya URL video TikTok kamu :(.\n\nGunakan format: \`.tiktok [URL video TikTok] ya!\``
+            `${config.botShortName} tidak melihat adanya URL video TikTok kamu :(\n\nGunakan format: \`.tiktok [URL video TikTok] ya!\``
         );
+        return 0;
+    }
+
+    // Validate URL is from tiktok.com or vm.tiktok.com to prevent SSRF
+    const validTiktokDomains = ['tiktok.com', 'vm.tiktok.com'];
+    const isValidTiktokUrl = tiktokUrl.startsWith('http') && validTiktokDomains.some(domain => tiktokUrl.includes(domain));
+    if (!isValidTiktokUrl) {
+        wweb.replyMessage(message, `${config.botShortName} URL yang diberikan bukan URL TikTok yang valid!\n\nGunakan URL TikTok yang benar, contoh: https://vm.tiktok.com/...`);
         return 0;
     }
 
