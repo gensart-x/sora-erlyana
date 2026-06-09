@@ -58,8 +58,11 @@ const geminiText = async (text: string): Promise<GeminiResponse> => {
         ]
     };
 
-    // Add API key to the URL
-    geminiUrl = geminiUrl + '?key=' + 'here';
+    // Add API key to the URL from environment variable
+    if (!config.geminiToken) {
+        throw new Error('Gemini API key is not configured');
+    }
+    geminiUrl = geminiUrl + '?key=' + config.geminiToken;
 
     // Hit the API
     const response = await axios.post(geminiUrl, requestDataFormat);

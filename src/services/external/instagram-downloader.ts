@@ -58,7 +58,13 @@ const instagramDownloader: Executor = async (client, message) => {
     const instagramUrl = message.body.split(' ')[1];
 
     if (instagramUrl == undefined) {
-        wweb.replyMessage(message, `${config.botShortName} tidak melihat adanya URL video IG kamu :(.\n\nGunakan format: \`.ig [URL video IG]\` ya!`);
+        wweb.replyMessage(message, `${config.botShortName} tidak melihat adanya URL video IG kamu :(\n\nGunakan format: \`.ig [URL video IG]\` ya!`);
+        return 0;
+    }
+
+    // Validate URL is from instagram.com to prevent SSRF
+    if (!instagramUrl.includes('instagram.com') || !instagramUrl.startsWith('http')) {
+        wweb.replyMessage(message, `${config.botShortName} URL yang diberikan bukan URL Instagram yang valid!\n\nGunakan URL Instagram yang benar, contoh: https://www.instagram.com/reel/...`);
         return 0;
     }
 

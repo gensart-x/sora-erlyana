@@ -3,6 +3,8 @@ import * as logger from '@utils/logger'
 import * as wweb from '@utils/wweb'
 import config from '@/env'
 
+const MAX_LOG_LINES = 50; // Limit to prevent message overflow and excessive internal path exposure
+
 const log: Executor = async (client, message) => {
 
     // If the chat ID is not same with the registered WhatsApp chat id in the env, ignore it
@@ -30,12 +32,16 @@ const log: Executor = async (client, message) => {
         const logs: string = logger.fetchLog(logFile);
 
         if (logs != '') {
-            wweb.replyMessage(message, logs)
+            // Limit to last N lines and sanitize local paths
+            const lines = logs.trim().split('\n');
+            const limitedLines = lines.slice(-MAX_LOG_LINES);
+            const sanitized = limitedLines.join('\n').replace(/\/home\/[^/]+/g, '/home/[user]');
+            wweb.replyMessage(message, sanitized);
         } else {
             wweb.replyMessage(message, `${config.botShortName} tidak melihat ada log error saat ini.`)
         }
     } catch (error) {
-        wweb.replyMessage(message, 'Terjadi kesalahan saat memuat log.\n\n' + (error as Error).message)
+        wweb.replyMessage(message, 'Terjadi kesalahan saat memuat log.\\n\\n' + (error as Error).message)
     }
 }
 

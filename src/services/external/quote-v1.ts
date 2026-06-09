@@ -12,8 +12,11 @@ type Quote = {
 const getForismaticQuotes: Executor = async (client, message) => {
     try {
         // Quote retrieval
-        const forismaticApiUrl: string = 'http://api.forismatic.com/api/1.0/json?method=getQuote&format=json&lang=en';
-        const quoteResponse = await axios.post(forismaticApiUrl);
+        // NOTE: Forismatic does not support HTTPS (their servers only serve HTTP)
+        // This is a public non-sensitive API, so HTTP is acceptable here.
+        // We use GET instead of POST (correct for this idempotent read-only endpoint).
+        const forismaticApiUrl: string = 'http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en';
+        const quoteResponse = await axios.get(forismaticApiUrl);
         const quote: Quote = {
             quote: quoteResponse.data.quoteText,
             author: quoteResponse.data.quoteAuthor
